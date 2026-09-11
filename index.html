@@ -866,6 +866,9 @@ body{
 .links a:hover{background:var(--fg);color:#fff;text-decoration:none}
 .links svg{width:19px;height:19px;flex:none}
 .foot-links a{display:inline-flex;align-items:center;min-height:44px}
+
+/* [hidden] must beat the class that sets display, or the menu never closes */
+.menu-panel[hidden]{display:none!important}
 </style>
 </head>
 <body>
