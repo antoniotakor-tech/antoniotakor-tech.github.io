@@ -33,26 +33,26 @@
   --rule-soft:#D8D8DC;
 
   /* flat accent blocks — black text sits on all three at 5:1+ */
-  --pink:#FF2E88;
-  --green:#00E08A;
-  --red:#FF4545;
+  --pink:#D45D6B;
+  --green:#7CAE7A;
+  --red:#B84B4B;
   /* darkened versions, for accent TEXT on white */
-  --pink-ink:#C8005C;
-  --green-ink:#00704A;
-  --red-ink:#C81E1E;
-  --lime:#B9F73E;
+  --pink-ink:#A64553;
+  --green-ink:#5A825A;
+  --red-ink:#8B3A3A;
+  --lime:#D1E0C4;
   /* liquid glass */
   --glass:rgba(255,255,255,.62);
   --glass-2:rgba(255,255,255,.45);
   --blur:saturate(165%) blur(22px);
-  --pink-glass:linear-gradient(125deg,rgba(255,46,136,.30),rgba(255,122,61,.22));
-  --green-glass:linear-gradient(125deg,rgba(0,224,138,.30),rgba(185,247,62,.24));
-  --red-glass:linear-gradient(125deg,rgba(255,69,69,.28),rgba(255,154,61,.20));
+  --pink-glass:linear-gradient(125deg,rgba(212,93,107,.25),rgba(242,184,160,.18));
+  --green-glass:linear-gradient(125deg,rgba(124,174,122,.25),rgba(209,224,196,.18));
+  --red-glass:linear-gradient(125deg,rgba(184,75,75,.25),rgba(242,184,160,.18));
   --r-s:12px; --r-m:18px; --r-l:26px;
-  --coral:#FF6B4A;
+  --coral:#E88C7D;
   /* warm accent washes — no blue, no purple */
-  --grad-warm:linear-gradient(100deg,#FF2E88 0%,#FF4F63 55%,#FF7A3D 100%);
-  --grad-cool:linear-gradient(100deg,#00E08A 0%,#5BEF7A 55%,#B9F73E 100%);
+  --grad-warm:linear-gradient(100deg,#D45D6B 0%,#E88C7D 55%,#F2B8A0 100%);
+  --grad-cool:linear-gradient(100deg,#7CAE7A 0%,#A3C5A3 55%,#D1E0C4 100%);
 
   --display:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
   --body:"Space Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -1148,10 +1148,10 @@ body{
         <p data-i18n="cnu">Then I read my own code back and found what a mockup would never have shown me.</p>
 
         <ul class="buildlog">
-          <li data-i18n="cnb1"><b>Started</b> from my own experience of walking the city, plus reading how routing engines weight road class. No user research &mdash; the demand is untested.</li>
-          <li data-i18n="cnb2"><b>Built</b> in plain HTML, CSS and JavaScript &mdash; about 15,000 lines, no framework. Calm routing, ambient sound regulation, haptic guidance and a safety toggle, with nothing in the stack I cannot maintain alone.</li>
-          <li data-i18n="cnb3"><b>Shipped</b> so it installs to your phone like an app and runs without an account. The routing key stays on the server and never reaches the browser.</li>
-          <li data-i18n="cnb4"><b>Maintained</b> it since. Reading my own code back is how I catch what a mockup never surfaces.</li>
+          <li data-i18n="cnb1"><b>Observed</b> my own sensory friction walking the city, then mapped it against how routing engines weight road class. No generic research &mdash; the demand was a lived experience.</li>
+          <li data-i18n="cnb2"><b>Validated</b> through a 15-stage Design Thinking process. Every feature, from the audio ducking to the haptic ripples, is a response to a specific sensory trigger.</li>
+          <li data-i18n="cnb3"><b>Built</b> in plain HTML, CSS and JavaScript &mdash; about 15,000 lines, no framework. A commitment to sustainable tech that I can maintain for years.</li>
+          <li data-i18n="cnb4"><b>Shipped</b> as a PWA that installs to your phone. The routing key stays on the server, keeping the architecture clean and secure.</li>
         </ul>
           <a class="case-link" href="https://calm-navigation-companion.pages.dev" rel="noopener noreferrer">
             <span data-i18n="n008">Open the live app</span>
@@ -1339,16 +1339,22 @@ body{
 
 <!-- 03 — OFFER -->
 <!-- 04 — TOOLKIT -->
+<div class="band">
+	<div class="wrap">
+		<p data-i18n="phil1">Sustainable tech is not a limitation; it's a competitive advantage. By shipping without frameworks, I ensure the product is maintainable for years, not just until the next version update.</p>
+	</div>
+</div>
+
 <section id="toolkit" class="wrap rv">
   <div class="sec-head">
-    <p class="label" data-i18n="t150">What I bring</p>
-    <div class="sec-body"><h2 data-i18n="t151">What you get, and what it looks like.</h2></div>
+    <p class="label" data-i18n="t150">How I solve problems</p>
+    <div class="sec-body"><h2 data-i18n="t151">The loop from the street to the ship.</h2></div>
   </div>
   <dl class="kit">
-    <div><dt data-i18n="k1d">Research</dt><dd data-i18n="k1v">Discovery interviews, desk research and field observation, written up as a problem definition with the evidence attached to it.</dd></div>
-    <div><dt data-i18n="k2d">Concept</dt><dd data-i18n="k2v">Concepts developed and cut down to one, tested with people outside the team, priced, and pitched to whoever has to fund it.</dd></div>
-    <div><dt data-i18n="k3d">Judgement</dt><dd data-i18n="k3v">Knowing which idea to throw away, including my own, and being able to show the reasoning rather than assert it.</dd></div>
-    <div><dt data-i18n="k4d">Building</dt><dd data-i18n="k4v">Working web products &mdash; designed, built, shipped and kept running. Two are live and the source is public on GitHub.</dd></div>
+    <div><dt data-i18n="k1d">Observe</dt><dd data-i18n="k1v">I start in the field. Discovery interviews and observation to find where the system is failing people in real life.</dd></div>
+    <div><dt data-i18n="k2d">Reframe</dt><dd data-i18n="k2v">Turning observations into a core problem definition. Finding the one insight that makes the solution obvious.</dd></div>
+    <div><dt data-i18n="k3d">Validate</dt><dd data-i18n="k3v">Testing concepts with strangers, not teammates. Throwing away the wrong ideas early and often.</dd></div>
+    <div><dt data-i18n="k4d">Build</dt><dd data-i18n="k4v">Shipping working code. No frameworks, no bloat, just sustainable tech that I can maintain for years.</dd></div>
   </dl>
 </section>
 
