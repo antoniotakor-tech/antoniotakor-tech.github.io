@@ -746,6 +746,60 @@ h2.label{
   line-height:1.4;margin:0 0 var(--s3);display:inline-block;
 }
 h3.case-name{margin:0}
+
+/* ---------- evidence row ---------- */
+.fact-wide{grid-column:1 / -1}
+.fact-wide dd{font-weight:400;line-height:1.5}
+.fact-wide dd b{font-weight:700}
+mark.todo{
+  background:#FFE8A3;color:#4A3200;padding:.05em .35em;border-radius:4px;
+  font-family:var(--display);font-weight:700;font-size:.82em;
+  box-decoration-break:clone;-webkit-box-decoration-break:clone;
+}
+
+/* ---------- the shipped one gets the most room ---------- */
+.shot{margin:0 0 .9rem;border-radius:var(--r-m);overflow:hidden;background:rgba(255,255,255,.5)}
+.shot img{width:100%;height:auto;display:block}
+@media (min-width:820px){
+  .shot{max-width:420px;margin-inline:auto}
+}
+
+/* ---------- the diamond, demoted to a strip ---------- */
+.dd-strip{margin:0 0 var(--s4)}
+.dd-small{width:100%;max-width:360px;margin:0;filter:none}
+.dd-cap{
+  font-family:var(--display);font-weight:600;font-size:.78rem;line-height:1.5;
+  color:var(--muted);margin:.7rem 0 0;max-width:56ch;
+}
+@media (min-width:820px){
+  .dd-strip{display:flex;align-items:center;gap:var(--s4)}
+  .dd-cap{margin:0}
+}
+
+/* ---------- copyable address ---------- */
+.direct-mail{
+  margin:0 0 var(--s4);padding:1.1rem 1.25rem;border-radius:var(--r-m);
+  background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);
+}
+.dm-label{
+  font-family:var(--display);font-weight:800;font-size:.66rem;letter-spacing:.17em;
+  text-transform:uppercase;color:var(--muted);margin:0 0 .6rem;
+}
+.dm-row{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
+.dm-addr{
+  font-family:var(--display);font-weight:700;font-size:1.02rem;letter-spacing:-.01em;
+  color:var(--fg);user-select:all;word-break:break-all;
+}
+.dm-copy{
+  min-height:44px;padding:.55rem 1.1rem;border:0;border-radius:999px;
+  background:var(--grad-warm);color:var(--fg);cursor:pointer;
+  font-family:var(--display);font-weight:800;font-size:.72rem;
+  letter-spacing:.13em;text-transform:uppercase;
+  transition:background-color .15s ease,color .15s ease;
+}
+.dm-copy:hover{background:var(--fg);color:#fff}
+.dm-copy[data-done="1"]{background:var(--green);color:var(--fg)}
+.dm-hint{font-size:.84rem;color:var(--muted);margin:.75rem 0 0;max-width:52ch}
 </style>
 </head>
 <body>
@@ -787,7 +841,7 @@ h3.case-name{margin:0}
       <h1 data-i18n="t002">Most projects fail because they solve <mark>the wrong&nbsp;problem.</mark></h1>
       <p class="lead hero-sub" data-i18n="t003">
         I start where there is no product yet. Find the real problem, test it with the people who have
-        it, then build it. It ends up online, not in a slide.
+        it, then build it. Two of the four below, you can open right now.
       </p>
       <div class="cta-row">
         <a class="btn btn-fill" href="#contact">
@@ -834,20 +888,14 @@ h3.case-name{margin:0}
   <div class="wrap"><p data-i18n="t010">Every project here started as the wrong problem.</p></div>
 </div>
 
-<section id="process" class="wrap rv">
-  <div class="sec-head">
-    <p class="label" data-i18n="t011">01 &mdash; How the work runs</p>
-    <div class="sec-body">
-      <h2 data-i18n="t012">Two diamonds. Most people skip the first one.</h2>
-      <p data-i18n="t013">
-        I come in at the far left, before anyone has agreed what the problem even is. That is where
-        the expensive mistakes get made.
-      </p>
-    </div>
-  </div>
+<main id="main">
 
-  <div class="dd-wrap">
-    <svg class="dd" viewBox="0 0 920 210" role="img" aria-labelledby="dd-title dd-desc">
+<!-- 02 — WORK -->
+<section id="work" class="wrap rv">
+    <h2 class="label" data-i18n="n001">Work</h2>
+
+  <div class="dd-strip">
+    <svg class="dd dd-small" viewBox="0 0 920 210" role="img" aria-labelledby="dd-title dd-desc">
       <title id="dd-title">The Double Diamond</title>
       <desc id="dd-desc">Two diamonds meeting at a point. The first widens to explore the problem and narrows to define it; the second widens to explore solutions and narrows to the one that ships.</desc>
       <defs>
@@ -869,235 +917,16 @@ h3.case-name{margin:0}
         <path d="M682 32 V178"/>
       </g>
     </svg>
-    <div class="dd-phases">
-      <div data-i18n="d011"><i>01</i><b>Discover</b></div>
-      <div data-i18n="d012"><i>02</i><b>Define</b></div>
-      <div data-i18n="d013"><i>03</i><b>Develop</b></div>
-      <div data-i18n="d014"><i>04</i><b>Deliver</b></div>
-    </div>
+    <p class="dd-cap" data-i18n="ddcap">Discover &middot; Define &middot; Develop &middot; Deliver &mdash; I come in at the far left, before anyone has agreed what the problem is.</p>
   </div>
-</section>
 
-<main id="main">
-
-<!-- 02 — WORK -->
-<section id="work" class="wrap rv">
-    <h2 class="label" data-i18n="n001">Work</h2>
 
 
   <article class="case">
     <details class="case-more">
       <summary>
         <span class="case-head">
-          <span class="case-num" data-i18n="rgm"><b>01</b> <span>Research &amp; concept</span> <span>2026</span> <span>Solo &middot; Amsterdam</span></span>
-          <h3 class="case-name" data-i18n="rgn">The Return Gap</h3>
-          <span class="case-rf" data-i18n="rgr"><span class="rf-from">Who is making the mess</span> <span class="rf-arrow">&rarr;</span> <span class="rf-to">Why the search fails</span></span>
-        </span>
-        <span class="sign" aria-hidden="true"></span>
-      </summary>
-
-      <div class="panel">
-        <dl class="facts">
-            <div><dt data-i18n="rge1d">Role</dt><dd data-i18n="rge1v">Solo — research, framing, concept</dd></div>
-            <div><dt data-i18n="rge2d">Evidence</dt><dd data-i18n="rge2v">Street interviews and my own observation of the bins</dd></div>
-            <div><dt data-i18n="rge3d">Made</dt><dd data-i18n="rge3v">A collection model and a costed first pilot</dd></div>
-            <div><dt data-i18n="rge4d">Status</dt><dd data-i18n="rge4v">Proposed. The pilot has not been run</dd></div>
-        </dl>
-
-        <div class="case-media">
-          <div class="flow">
-            <div class="flow-lane now">
-              <span class="flow-tag" data-i18n="f001">What happens now</span>
-              <div class="flow-row">
-                <b data-i18n="f002">Home</b><i>&rarr;</i>
-                <b data-i18n="f003">Street bin</b><i>&rarr;</i>
-                <b data-i18n="f004">Bag torn open to look</b><i>&rarr;</i>
-                <b data-i18n="f005">Often nothing in it</b>
-              </div>
-              <p class="flow-note" data-i18n="f006">The search is blind, so it has to wreck the bag to find out. That is the mess.</p>
-            </div>
-            <div class="flow-lane fix">
-              <span class="flow-tag" data-i18n="f007">What I proposed</span>
-              <div class="flow-row">
-                <b data-i18n="f008">Home</b><i>&rarr;</i>
-                <b data-i18n="f009">Caught inside the building</b><i>&rarr;</i>
-                <b data-i18n="f010">Returned for the deposit</b><i>&rarr;</i>
-                <b data-i18n="f011">Money split three ways</b>
-              </div>
-              <p class="flow-note" data-i18n="f012">Catch it at the front door and there is nothing left in a bag worth opening.</p>
-            </div>
-          </div>
-        </div>
-
-        <p class="panel-lead" data-i18n="rgl">Bins across Amsterdam get torn open for deposit containers, and the city started pulling bins out in response. Nobody had asked what the person opening the bag was actually doing.</p>
-        <p data-i18n="rgu">A woman on that street told me the bag gets torn open, everything goes everywhere, and half the time there is nothing in it. The mess is not carelessness &mdash; it is what a search leaves behind when it fails. Which makes cleaner streets and better earnings the same lever, not opposing ones.</p>
-
-        <div class="proc">
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>1</b></div>
-            <p class="proc-ph" data-i18n="rgp1">Discover</p>
-            <p data-i18n="rgt1">Two days of interviews in the street. I never said the word rubbish once.</p>
-          </div>
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>2</b></div>
-            <p class="proc-ph" data-i18n="rgp2">Define</p>
-            <p data-i18n="rgt2">Nobody raised it on their own. Everyone blamed a different group. Nobody had ever reported it.</p>
-          </div>
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>3</b></div>
-            <p class="proc-ph" data-i18n="rgp3">Develop</p>
-            <p data-i18n="rgt3">Every attempt I could find anywhere acts on the public bin. Not one acts earlier.</p>
-          </div>
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>4</b></div>
-            <p class="proc-ph" data-i18n="rgp4">Deliver</p>
-            <p data-i18n="rgt4">Catch the containers inside the building instead. One building, three months, one number to watch.</p>
-          </div>
-        </div>
-
-        <p class="panel-close" data-i18n="rgc">Three parties, three different reasons to say yes.</p>
-      </div>
-    </details>
-  </article>
-
-  <article class="case">
-    <details class="case-more">
-      <summary>
-        <span class="case-head">
-          <span class="case-num" data-i18n="plm"><b>02</b> <span>Product manager</span> <span>2025&ndash;26</span> <span>Brand partner, via my degree</span></span>
-          <h3 class="case-name" data-i18n="pln">Purylock</h3>
-          <span class="case-rf" data-i18n="plr"><span class="rf-from">Keep people dry in the rain</span> <span class="rf-arrow">&rarr;</span> <span class="rf-to">Get people dry after it</span></span>
-        </span>
-        <span class="sign" aria-hidden="true"></span>
-      </summary>
-
-      <div class="panel">
-        <dl class="facts">
-            <div><dt data-i18n="ple1d">Role</dt><dd data-i18n="ple1v">Product manager, in a team</dd></div>
-            <div><dt data-i18n="ple2d">Evidence</dt><dd data-i18n="ple2v">Interviews with commuters, concept tested with them</dd></div>
-            <div><dt data-i18n="ple3d">Made</dt><dd data-i18n="ple3v">A defined concept, priced</dd></div>
-            <div><dt data-i18n="ple4d">Status</dt><dd data-i18n="ple4v">Pitched back to the brand partner</dd></div>
-        </dl>
-
-        <div class="case-media">
-          <div class="flow">
-            <div class="flow-lane now">
-              <span class="flow-tag" data-i18n="plf9">Where the brief was aimed</span>
-              <div class="flow-row">
-                <b data-i18n="plf1">Caught in the rain</b><i>&rarr;</i>
-                <b data-i18n="plf2">Arrive at work</b><i>&rarr;</i>
-                <b data-i18n="plf3">Sit in wet clothes</b><i>&rarr;</i>
-                <b data-i18n="plf4">Four hours ruined</b>
-              </div>
-              <p class="flow-note" data-i18n="plf11">The brand existed to stop step one. Nobody was doing anything about steps three and four.</p>
-            </div>
-            <div class="flow-lane fix">
-              <span class="flow-tag" data-i18n="plf10">Where the pain actually was</span>
-              <div class="flow-row">
-                <b data-i18n="plf5">Caught in the rain</b><i>&rarr;</i>
-                <b data-i18n="plf6">Arrive at work</b><i>&rarr;</i>
-                <b data-i18n="plf7">Hang it in the locker</b><i>&rarr;</i>
-                <b data-i18n="plf8">Dry by lunch</b>
-              </div>
-              <p class="flow-note" data-i18n="plf12">One unit in the lobby serves the whole building, every day it rains.</p>
-            </div>
-          </div>
-        </div>
-
-        <p class="panel-lead" data-i18n="pll">A Dutch weather-gear brand, an open brief, no product category and no spec. My job was to make the direction defensible with evidence instead of taste.</p>
-        <p data-i18n="plu">Nobody complained about the commute. They complained about the four hours after it. All of the pain sat on one moment: arrival.</p>
-
-        <div class="proc">
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>1</b></div>
-            <p class="proc-ph" data-i18n="plp1">Discover</p>
-            <p data-i18n="plt1">Interviews at the station, then I moved. Every other team was standing in the same spot getting the same answers.</p>
-          </div>
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>2</b></div>
-            <p class="proc-ph" data-i18n="plp2">Define</p>
-            <p data-i18n="plt2">The problem was not the rain. It was the four hours after it.</p>
-          </div>
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>3</b></div>
-            <p class="proc-ph" data-i18n="plp3">Develop</p>
-            <p data-i18n="plt3">Shared beat personal every time. One unit serves a whole building; a gadget serves one person.</p>
-          </div>
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>4</b></div>
-            <p class="proc-ph" data-i18n="plp4">Deliver</p>
-            <p data-i18n="plt4">Tested with commuters, priced, and pitched back to the brand.</p>
-          </div>
-        </div>
-
-        <p class="panel-close" data-i18n="plc">Classmates tell you it is interesting. Only strangers tell you they want it.</p>
-      </div>
-    </details>
-  </article>
-
-  <article class="case">
-    <details class="case-more">
-      <summary>
-        <span class="case-head">
-          <span class="case-num" data-i18n="gpm"><b>03</b> <span>Concept &amp; validation</span> <span>2025&ndash;26</span> <span>Team of six</span></span>
-          <h3 class="case-name" data-i18n="gpn">GrandPod</h3>
-          <span class="case-rf" data-i18n="gpr"><span class="rf-from">An app for lonely older people</span> <span class="rf-arrow">&rarr;</span> <span class="rf-to">A human on the other end</span></span>
-        </span>
-        <span class="sign" aria-hidden="true"></span>
-      </summary>
-
-      <div class="panel">
-        <dl class="facts">
-            <div><dt data-i18n="gpe1d">Role</dt><dd data-i18n="gpe1v">Concept and validation, in a team of six</dd></div>
-            <div><dt data-i18n="gpe2d">Evidence</dt><dd data-i18n="gpe2v">Tested with people over 75, then assessed live</dd></div>
-            <div><dt data-i18n="gpe3d">Made</dt><dd data-i18n="gpe3v">A working physical prototype and a browser MVP</dd></div>
-        </dl>
-
-        <div class="case-media">
-          <figure>
-            <img src="assets/grandpod-prototype.jpg" alt="The prototype: a blue box with a dot-matrix display and three plain actions, no screen to learn." loading="lazy" decoding="async" width="1120" height="728">
-          </figure>
-          <figure>
-            <img src="assets/grandpod-devices.jpg" alt="The device concept in four domestic colourways." loading="lazy" decoding="async" width="1400" height="1280">
-          </figure>
-        </div>
-
-        <p class="panel-lead" data-i18n="gpl">Loneliness and digital exclusion among people over 75 who want to keep living on their own. The team's instinct was an app.</p>
-        <p data-i18n="gpu">These are people who are offline by definition. An app makes the barrier the product. Same reason AI does not go at the front: a synthetic voice asking a fraud-wary 80-year-old to trust it starts out losing.</p>
-
-        <div class="proc">
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>1</b></div>
-            <p class="proc-ph" data-i18n="gpp1">Discover</p>
-            <p data-i18n="gpt1">Research, watching how older people use public space, and interviews. A roleplay about phone scams taught us more than any of it.</p>
-          </div>
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>2</b></div>
-            <p class="proc-ph" data-i18n="gpp2">Define</p>
-            <p data-i18n="gpt2">Fear of being scammed decides what this group will accept from anyone, human or machine.</p>
-          </div>
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>3</b></div>
-            <p class="proc-ph" data-i18n="gpp3">Develop</p>
-            <p data-i18n="gpt3">We put every idea we had on the table and cut until one was left standing.</p>
-          </div>
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>4</b></div>
-            <p class="proc-ph" data-i18n="gpp4">Deliver</p>
-            <p data-i18n="gpt4">A cardboard box and a phone menu standing in for the real thing. Tested on real people over 75, then judged live in front of assessors.</p>
-          </div>
-        </div>
-
-        <p class="panel-close" data-i18n="gpc">Voice first. A real person on the line, the machine behind it.</p>
-      </div>
-    </details>
-  </article>
-
-  <article class="case">
-    <details class="case-more">
-      <summary>
-        <span class="case-head">
-          <span class="case-num" data-i18n="cnm"><b>04</b> <span>Solo &mdash; thought up, designed, built, put online</span> <span>2026, live</span></span>
+          <span class="case-num" data-i18n="cnm"><b>01</b> <span>Solo &mdash; thought up, designed, built, put online</span> <span>2026, live</span></span>
           <h3 class="case-name" data-i18n="cnn">Calm Navigation Companion</h3>
           <span class="case-rf" data-i18n="cnr"><span class="rf-from">Get me there fastest</span> <span class="rf-arrow">&rarr;</span> <span class="rf-to">Get me there without wrecking me</span></span>
         </span>
@@ -1110,9 +939,16 @@ h3.case-name{margin:0}
             <div><dt data-i18n="cne2d">Evidence</dt><dd data-i18n="cne2v">Shipped, then audited in production</dd></div>
             <div><dt data-i18n="cne3d">Made</dt><dd data-i18n="cne3v">A live, installable web app</dd></div>
             <div><dt data-i18n="cne4d">Status</dt><dd data-i18n="cne4v">Public. Anyone can open it right now</dd></div>
+            <div class="fact-wide"><dt data-i18n="cnevd">Who I spoke to</dt><dd data-i18n="cnev"><b>Nobody yet.</b> Built from desk research and from walking the same streets at different hours. <mark class="todo">[[user testing with sensory-sensitive walkers — NOT DONE]]</mark> The assumption it broke was my own: I thought shipping was the finish line. Reading my own code back found three faults a mockup never shows.</dd></div>
         </dl>
 
         <div class="case-media">
+          <figure class="shot">
+            <img src="assets/calm-nav-screenshot.png"
+                 alt="The Calm Navigation Companion app on a phone, showing a calm walking route through Amsterdam."
+                 loading="lazy" decoding="async" width="880" height="1100"
+                 onerror="this.closest('figure').hidden=true">
+          </figure>
           <div class="flow">
             <div class="flow-lane now">
               <span class="flow-tag" data-i18n="cnf9">What every map does</span>
@@ -1171,6 +1007,214 @@ h3.case-name{margin:0}
       </div>
     </details>
   </article>
+  <article class="case">
+    <details class="case-more">
+      <summary>
+        <span class="case-head">
+          <span class="case-num" data-i18n="rgm"><b>02</b> <span>Research &amp; concept</span> <span>2026</span> <span>Solo &middot; Amsterdam</span></span>
+          <h3 class="case-name" data-i18n="rgn">The Return Gap</h3>
+          <span class="case-rf" data-i18n="rgr"><span class="rf-from">Who is making the mess</span> <span class="rf-arrow">&rarr;</span> <span class="rf-to">Why the search fails</span></span>
+        </span>
+        <span class="sign" aria-hidden="true"></span>
+      </summary>
+
+      <div class="panel">
+        <dl class="facts">
+            <div><dt data-i18n="rge1d">Role</dt><dd data-i18n="rge1v">Solo — research, framing, concept</dd></div>
+            <div><dt data-i18n="rge2d">Evidence</dt><dd data-i18n="rge2v">Street interviews and my own observation of the bins</dd></div>
+            <div><dt data-i18n="rge3d">Made</dt><dd data-i18n="rge3v">A collection model and a costed first pilot</dd></div>
+            <div><dt data-i18n="rge4d">Status</dt><dd data-i18n="rge4v">Proposed. The pilot has not been run</dd></div>
+            <div class="fact-wide"><dt data-i18n="rgevd">Who I spoke to</dt><dd data-i18n="rgev"><b>Eight people in the street, over two days</b> — Amsterdam Centraal, a canal-side park, along the canals. <mark class="todo">[[exact dates — FILL]]</mark> I went expecting complaints about rubbish. Not one person raised it unprompted. What broke the assumption came last: a resident of seventeen years said the bag gets torn open and half the time there is nothing in it.</dd></div>
+        </dl>
+
+        <div class="case-media">
+          <div class="flow">
+            <div class="flow-lane now">
+              <span class="flow-tag" data-i18n="f001">What happens now</span>
+              <div class="flow-row">
+                <b data-i18n="f002">Home</b><i>&rarr;</i>
+                <b data-i18n="f003">Street bin</b><i>&rarr;</i>
+                <b data-i18n="f004">Bag torn open to look</b><i>&rarr;</i>
+                <b data-i18n="f005">Often nothing in it</b>
+              </div>
+              <p class="flow-note" data-i18n="f006">The search is blind, so it has to wreck the bag to find out. That is the mess.</p>
+            </div>
+            <div class="flow-lane fix">
+              <span class="flow-tag" data-i18n="f007">What I proposed</span>
+              <div class="flow-row">
+                <b data-i18n="f008">Home</b><i>&rarr;</i>
+                <b data-i18n="f009">Caught inside the building</b><i>&rarr;</i>
+                <b data-i18n="f010">Returned for the deposit</b><i>&rarr;</i>
+                <b data-i18n="f011">Money split three ways</b>
+              </div>
+              <p class="flow-note" data-i18n="f012">Catch it at the front door and there is nothing left in a bag worth opening.</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="panel-lead" data-i18n="rgl">Bins across Amsterdam get torn open for deposit containers, and the city started pulling bins out in response. Nobody had asked what the person opening the bag was actually doing.</p>
+        <p data-i18n="rgu">A woman on that street told me the bag gets torn open, everything goes everywhere, and half the time there is nothing in it. The mess is not carelessness &mdash; it is what a search leaves behind when it fails. Which makes cleaner streets and better earnings the same lever, not opposing ones.</p>
+
+        <div class="proc">
+          <div class="proc-step">
+            <div class="proc-dia" aria-hidden="true"><b>1</b></div>
+            <p class="proc-ph" data-i18n="rgp1">Discover</p>
+            <p data-i18n="rgt1">Two days of interviews in the street. I never said the word rubbish once.</p>
+          </div>
+          <div class="proc-step">
+            <div class="proc-dia" aria-hidden="true"><b>2</b></div>
+            <p class="proc-ph" data-i18n="rgp2">Define</p>
+            <p data-i18n="rgt2">Nobody raised it on their own. Everyone blamed a different group. Nobody had ever reported it.</p>
+          </div>
+          <div class="proc-step">
+            <div class="proc-dia" aria-hidden="true"><b>3</b></div>
+            <p class="proc-ph" data-i18n="rgp3">Develop</p>
+            <p data-i18n="rgt3">Every attempt I could find anywhere acts on the public bin. Not one acts earlier.</p>
+          </div>
+          <div class="proc-step">
+            <div class="proc-dia" aria-hidden="true"><b>4</b></div>
+            <p class="proc-ph" data-i18n="rgp4">Deliver</p>
+            <p data-i18n="rgt4">Catch the containers inside the building instead. One building, three months, one number to watch.</p>
+          </div>
+        </div>
+      </div>
+    </details>
+  </article>
+  <article class="case">
+    <details class="case-more">
+      <summary>
+        <span class="case-head">
+          <span class="case-num" data-i18n="plm"><b>03</b> <span>Product manager</span> <span>2025&ndash;26</span> <span>Brand partner, via my degree</span></span>
+          <h3 class="case-name" data-i18n="pln">Purylock</h3>
+          <span class="case-rf" data-i18n="plr"><span class="rf-from">Keep people dry in the rain</span> <span class="rf-arrow">&rarr;</span> <span class="rf-to">Get people dry after it</span></span>
+        </span>
+        <span class="sign" aria-hidden="true"></span>
+      </summary>
+
+      <div class="panel">
+        <dl class="facts">
+            <div><dt data-i18n="ple1d">Role</dt><dd data-i18n="ple1v">Product manager, in a team</dd></div>
+            <div><dt data-i18n="ple2d">Evidence</dt><dd data-i18n="ple2v">Interviews with commuters, concept tested with them</dd></div>
+            <div><dt data-i18n="ple3d">Made</dt><dd data-i18n="ple3v">A defined concept, priced</dd></div>
+            <div><dt data-i18n="ple4d">Status</dt><dd data-i18n="ple4v">Pitched back to the brand partner</dd></div>
+            <div class="fact-wide"><dt data-i18n="plevd">Who I spoke to</dt><dd data-i18n="plev"><b>Commuters at Amsterdam Centraal</b>, then deliberately moved to the OBA library because every other team was working the same spot. <mark class="todo">[[how many people, over what period — FILL]]</mark> I expected them to complain about getting wet. They complained about the four hours after.</dd></div>
+        </dl>
+
+        <div class="case-media">
+          <div class="flow">
+            <div class="flow-lane now">
+              <span class="flow-tag" data-i18n="plf9">Where the brief was aimed</span>
+              <div class="flow-row">
+                <b data-i18n="plf1">Caught in the rain</b><i>&rarr;</i>
+                <b data-i18n="plf2">Arrive at work</b><i>&rarr;</i>
+                <b data-i18n="plf3">Sit in wet clothes</b><i>&rarr;</i>
+                <b data-i18n="plf4">Four hours ruined</b>
+              </div>
+              <p class="flow-note" data-i18n="plf11">The brand existed to stop step one. Nobody was doing anything about steps three and four.</p>
+            </div>
+            <div class="flow-lane fix">
+              <span class="flow-tag" data-i18n="plf10">Where the pain actually was</span>
+              <div class="flow-row">
+                <b data-i18n="plf5">Caught in the rain</b><i>&rarr;</i>
+                <b data-i18n="plf6">Arrive at work</b><i>&rarr;</i>
+                <b data-i18n="plf7">Hang it in the locker</b><i>&rarr;</i>
+                <b data-i18n="plf8">Dry by lunch</b>
+              </div>
+              <p class="flow-note" data-i18n="plf12">One unit in the lobby serves the whole building, every day it rains.</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="panel-lead" data-i18n="pll">A Dutch weather-gear brand, an open brief, no product category and no spec. My job was to make the direction defensible with evidence instead of taste.</p>
+        <p data-i18n="plu">Nobody complained about the commute. They complained about the four hours after it. All of the pain sat on one moment: arrival.</p>
+
+        <div class="proc">
+          <div class="proc-step">
+            <div class="proc-dia" aria-hidden="true"><b>1</b></div>
+            <p class="proc-ph" data-i18n="plp1">Discover</p>
+            <p data-i18n="plt1">Interviews at the station, then I moved. Every other team was standing in the same spot getting the same answers.</p>
+          </div>
+          <div class="proc-step">
+            <div class="proc-dia" aria-hidden="true"><b>2</b></div>
+            <p class="proc-ph" data-i18n="plp2">Define</p>
+            <p data-i18n="plt2">The problem was not the rain. It was the four hours after it.</p>
+          </div>
+          <div class="proc-step">
+            <div class="proc-dia" aria-hidden="true"><b>3</b></div>
+            <p class="proc-ph" data-i18n="plp3">Develop</p>
+            <p data-i18n="plt3">Shared beat personal every time. One unit serves a whole building; a gadget serves one person.</p>
+          </div>
+          <div class="proc-step">
+            <div class="proc-dia" aria-hidden="true"><b>4</b></div>
+            <p class="proc-ph" data-i18n="plp4">Deliver</p>
+            <p data-i18n="plt4">Tested with commuters, priced, and pitched back to the brand.</p>
+          </div>
+        </div>
+
+        <p class="panel-close" data-i18n="plc">Classmates tell you it is interesting. Only strangers tell you they want it.</p>
+      </div>
+    </details>
+  </article>
+  <article class="case">
+    <details class="case-more">
+      <summary>
+        <span class="case-head">
+          <span class="case-num" data-i18n="gpm"><b>04</b> <span>Concept &amp; validation</span> <span>2025&ndash;26</span> <span>Team of six</span></span>
+          <h3 class="case-name" data-i18n="gpn">GrandPod</h3>
+          <span class="case-rf" data-i18n="gpr"><span class="rf-from">An app for lonely older people</span> <span class="rf-arrow">&rarr;</span> <span class="rf-to">A human on the other end</span></span>
+        </span>
+        <span class="sign" aria-hidden="true"></span>
+      </summary>
+
+      <div class="panel">
+        <dl class="facts">
+            <div><dt data-i18n="gpe1d">Role</dt><dd data-i18n="gpe1v">Concept and validation, in a team of six</dd></div>
+            <div><dt data-i18n="gpe2d">Evidence</dt><dd data-i18n="gpe2v">Tested with people over 75, then assessed live</dd></div>
+            <div><dt data-i18n="gpe3d">Made</dt><dd data-i18n="gpe3v">A working physical prototype and a browser MVP</dd></div>
+            <div class="fact-wide"><dt data-i18n="gpevd">Who I spoke to</dt><dd data-i18n="gpev"><b>Around twenty people while narrowing down</b>, plus observation of how older people use public space, and testing with real participants over 75. <mark class="todo">[[where and when — FILL]]</mark> The assumption that broke was the team's: we wanted to build an app for people who are defined by being shut out of apps.</dd></div>
+        </dl>
+
+        <div class="case-media">
+          <figure>
+            <img src="assets/grandpod-prototype.jpg" alt="The prototype: a blue box with a dot-matrix display and three plain actions, no screen to learn." loading="lazy" decoding="async" width="1120" height="728">
+          </figure>
+          <figure>
+            <img src="assets/grandpod-devices.jpg" alt="The device concept in four domestic colourways." loading="lazy" decoding="async" width="1400" height="1280">
+          </figure>
+        </div>
+
+        <p class="panel-lead" data-i18n="gpl">Loneliness and digital exclusion among people over 75 who want to keep living on their own. The team's instinct was an app.</p>
+        <p data-i18n="gpu"><strong>Voice first. A real person on the line, the machine behind it.</strong> These are people who are offline by definition. An app makes the barrier the product. Same reason AI does not go at the front: a synthetic voice asking a fraud-wary 80-year-old to trust it starts out losing.</p>
+
+        <div class="proc">
+          <div class="proc-step">
+            <div class="proc-dia" aria-hidden="true"><b>1</b></div>
+            <p class="proc-ph" data-i18n="gpp1">Discover</p>
+            <p data-i18n="gpt1">Research, watching how older people use public space, and interviews. A roleplay about phone scams taught us more than any of it.</p>
+          </div>
+          <div class="proc-step">
+            <div class="proc-dia" aria-hidden="true"><b>2</b></div>
+            <p class="proc-ph" data-i18n="gpp2">Define</p>
+            <p data-i18n="gpt2">Fear of being scammed decides what this group will accept from anyone, human or machine.</p>
+          </div>
+          <div class="proc-step">
+            <div class="proc-dia" aria-hidden="true"><b>3</b></div>
+            <p class="proc-ph" data-i18n="gpp3">Develop</p>
+            <p data-i18n="gpt3">We put every idea we had on the table and cut until one was left standing.</p>
+          </div>
+          <div class="proc-step">
+            <div class="proc-dia" aria-hidden="true"><b>4</b></div>
+            <p class="proc-ph" data-i18n="gpp4">Deliver</p>
+            <p data-i18n="gpt4">A cardboard box and a phone menu standing in for the real thing. Tested on real people over 75, then judged live in front of assessors.</p>
+          </div>
+        </div>
+        <a class="case-link" href="grandpod/" rel="noopener noreferrer">
+          <span data-i18n="gpmvp">Open the prototype</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><path d="M7 17 17 7M17 7H9m8 0v8"/></svg>
+        </a>
+      </div>
+    </details>
+  </article>
 
 </section>
 
@@ -1216,7 +1260,7 @@ h3.case-name{margin:0}
 <!-- 04 — TOOLKIT -->
 <section id="toolkit" class="wrap rv">
   <div class="sec-head">
-    <p class="label" data-i18n="t150">04 &mdash; What I bring</p>
+    <p class="label" data-i18n="t150">What I bring</p>
     <div class="sec-body"><h2 data-i18n="t151">What I am actually good at.</h2></div>
   </div>
   <dl class="kit">
@@ -1231,7 +1275,7 @@ h3.case-name{margin:0}
 <!-- 05 — CONTACT -->
 <section id="contact" class="wrap rv">
   <div class="sec-head">
-    <p class="label" data-i18n="t160">05 &mdash; Get in touch</p>
+    <p class="label" data-i18n="t160">Get in touch</p>
     <div class="sec-body">
       <h2 data-i18n="t161">Tell me what isn't working.</h2>
       <p data-i18n="t162">Write it badly. An unfinished thought is fine &mdash; that is the normal starting point.</p>
@@ -1239,6 +1283,15 @@ h3.case-name{margin:0}
   </div>
 
   <div class="contact-grid">
+    <div class="direct-mail">
+      <p class="dm-label" data-i18n="dm1">Or just email me</p>
+      <div class="dm-row">
+        <code id="dm-addr" class="dm-addr">antoniotakor@icloud.com</code>
+        <button type="button" class="dm-copy" id="dm-copy" data-i18n="dm2">Copy</button>
+      </div>
+      <p class="dm-hint" id="dm-hint" data-i18n="dm3">The form below opens your own mail app. If nothing happens when you use it, your computer has no mail app set up &mdash; copy the address instead.</p>
+    </div>
+
     <form id="problem-form" novalidate>
       <div class="field">
         <label for="f-name" data-i18n="t163">Your name</label>
@@ -1413,6 +1466,52 @@ h3.case-name{margin:0}
     });
   });
   setTimeout(function(){ els.forEach(function(e){ e.classList.add('in'); }); }, 2600);
+})();
+
+/* copy the address — so reaching me never depends on a mail client */
+(function(){
+  var btn  = document.getElementById('dm-copy');
+  var addr = document.getElementById('dm-addr');
+  if(!btn || !addr) return;
+  var original = btn.textContent;
+
+  var IT = { copied:'Copiata', selected:'Selezionata — premi Cmd+C' };
+  var EN = { copied:'Copied',  selected:'Selected — press Cmd+C' };
+
+  /* every path gives feedback; none of them can fail quietly */
+  function say(which){
+    var t = (window.__lang === 'it') ? IT : EN;
+    btn.textContent = t[which];
+    btn.setAttribute('data-done','1');
+    setTimeout(function(){
+      btn.textContent = original;
+      btn.removeAttribute('data-done');
+    }, 2400);
+  }
+  function selectIt(){
+    var r = document.createRange(); r.selectNodeContents(addr);
+    var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+  }
+
+  btn.addEventListener('click', function(){
+    var text = addr.textContent.trim();
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(
+        function(){ say('copied'); },
+        function(){ selectIt(); say('selected'); }   /* clipboard refused — select it instead, and say so */
+      );
+      return;
+    }
+    selectIt();
+    var ok = false;
+    try { ok = document.execCommand('copy'); } catch(e){}
+    say(ok ? 'copied' : 'selected');
+  });
+
+  /* the label is translated like everything else, so re-read it on switch */
+  document.addEventListener('langchange', function(){
+    if(!btn.hasAttribute('data-done')) original = btn.textContent;
+  });
 })();
 
 /* contact form -> the visitor's own mail app. No backend, nothing stored. */

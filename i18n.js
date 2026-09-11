@@ -5,7 +5,7 @@ a002:"Menu",
 n012:"Come lavoro",
 t001:"<span class=\"dot\" aria-hidden=\"true\"></span><span>Innovazione e prodotto &middot; Amsterdam</span>",
 t002:"Quasi tutti i progetti falliscono perch&eacute; risolvono <mark>il problema&nbsp;sbagliato.</mark>",
-t003:"Comincio prima che ci sia un prodotto. Cerco il problema vero, lo metto alla prova con chi ce l&rsquo;ha, e lo costruisco. Finisce online, non in una slide.",
+t003:"Comincio prima che ci sia un prodotto. Cerco il problema vero, lo metto alla prova con chi ce l&rsquo;ha, e lo costruisco. Due dei quattro qui sotto puoi aprirli adesso.",
 t004:"Dove sono",
 t005:"Amsterdam &middot; anche da remoto &middot; cittadino UE",
 t006:"Studio",
@@ -191,4 +191,27 @@ cne1d:"Ruolo", cne1v:"Da solo — dall'inizio alla fine",
 cne2d:"Prove",  cne2v:"Pubblicata, e poi riletta riga per riga in produzione",
 cne3d:"Fatto",  cne3v:"Una web app online e installabile",
 cne4d:"Stato",  cne4v:"Pubblica. Chiunque può aprirla adesso"
+});
+
+Object.assign(window.IT, {
+/* riga delle prove */
+cnevd:"Con chi ho parlato",
+cnev:"<b>Ancora con nessuno.</b> Nata dalla ricerca desk e dal camminare le stesse strade a orari diversi. <mark class=\"todo\">[[test con persone sensibili agli stimoli — NON FATTO]]</mark> L'assunzione che è saltata era la mia: pensavo che pubblicare fosse il traguardo. Rileggendo il mio codice ho trovato tre errori che un mockup non ti mostra.",
+rgevd:"Con chi ho parlato",
+rgev:"<b>Otto persone in strada, in due giorni</b> — Amsterdam Centraal, un parco sul canale, lungo i canali. <mark class=\"todo\">[[date esatte — DA COMPLETARE]]</mark> Mi aspettavo lamentele sui rifiuti. Nessuno li ha tirati fuori da solo. Quello che ha fatto saltare l'assunzione è arrivato per ultimo: una residente da diciassette anni mi ha detto che il sacco viene strappato e metà delle volte dentro non c'è niente.",
+plevd:"Con chi ho parlato",
+plev:"<b>Pendolari ad Amsterdam Centraal</b>, poi spostato apposta alla biblioteca OBA perché tutti gli altri gruppi lavoravano lo stesso punto. <mark class=\"todo\">[[quante persone, in quanto tempo — DA COMPLETARE]]</mark> Mi aspettavo si lamentassero di bagnarsi. Si lamentavano delle quattro ore dopo.",
+gpevd:"Con chi ho parlato",
+gpev:"<b>Una ventina di persone mentre stringevamo</b>, più osservazione di come gli anziani usano gli spazi pubblici, e test con partecipanti reali over 75. <mark class=\"todo\">[[dove e quando — DA COMPLETARE]]</mark> L'assunzione che è saltata era del gruppo: volevamo fare un'app per persone definite dall'essere tagliate fuori dalle app.",
+
+/* diamante compatto */
+ddcap:"Scoprire &middot; Definire &middot; Sviluppare &middot; Consegnare — io entro all'estrema sinistra, prima che qualcuno abbia deciso quale sia il problema.",
+
+/* indirizzo copiabile */
+dm1:"Oppure scrivimi e basta",
+dm2:"Copia",
+dm3:"Il modulo qui sotto apre la tua app di posta. Se non succede niente, sul tuo computer non ce n'è una configurata — copia l'indirizzo.",
+
+/* prototipo GrandPod online */
+gpmvp:"Apri il prototipo"
 });
