@@ -877,27 +877,6 @@ body{
 .menu-panel[hidden]{display:none!important}
 
 
-/* ---------- ideas surfacing: same pen as the divergence ---------- */
-.motes{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
-.motes i{
-  position:absolute;left:var(--x);bottom:-10%;
-  width:var(--s);height:var(--s);border-radius:50%;
-  border:1.5px solid var(--c);background:transparent;
-  opacity:0;
-  animation:rise var(--d) linear infinite;
-  animation-delay:calc(var(--t) * -1);
-  will-change:transform,opacity;
-}
-.motes i:nth-child(3n){border-width:1px}
-.motes i:nth-child(5n){background:var(--c);border-color:transparent;width:4px;height:4px}
-@keyframes rise{
-  0%   {transform:translate3d(0,0,0) scale(.75);opacity:0}
-  14%  {opacity:var(--o)}
-  76%  {opacity:var(--o)}
-  100% {transform:translate3d(18px,-112vh,0) scale(1.1);opacity:0}
-}
-.hero .wrap{position:relative;z-index:1}
-@media (prefers-reduced-motion:reduce){ .motes{display:none} }
 
 /* ---------- diverge, converge, twice — and always in motion ---------- */
 .diverge{
@@ -928,9 +907,74 @@ body{
   font-size:.93rem;max-width:56ch;
 }
 .colophon b{color:var(--fg);font-weight:800}
+
+/* ---------- ideas surfacing: dense at the floor, thinning upward ---------- */
+.motes{
+  position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0;
+  -webkit-mask-image:linear-gradient(to top,#000 0%,rgba(0,0,0,.62) 32%,rgba(0,0,0,.24) 64%,transparent 96%);
+          mask-image:linear-gradient(to top,#000 0%,rgba(0,0,0,.62) 32%,rgba(0,0,0,.24) 64%,transparent 96%);
+}
+.motes i{
+  position:absolute;left:var(--x);bottom:-6%;
+  width:var(--s);height:var(--s);border-radius:50%;
+  border:1.5px solid var(--c);background:transparent;
+  opacity:0;
+  animation:rise var(--d) linear infinite;
+  animation-delay:calc(var(--t) * -1);
+  will-change:transform,opacity;
+}
+.motes i:nth-child(3n){border-width:1px}
+.motes i:nth-child(5n){background:var(--c);border-color:transparent;width:4px;height:4px}
+@keyframes rise{
+  0%   {transform:translate3d(0,0,0) scale(.7);opacity:0}
+  10%  {opacity:var(--o)}
+  70%  {opacity:calc(var(--o) * .55)}
+  100% {transform:translate3d(16px,var(--dist),0) scale(1.08);opacity:0}
+}
+/* page content sits above the field */
+.hero,main,footer,.bar{position:relative;z-index:1}
+.bar{z-index:80}
+@media (prefers-reduced-motion:reduce){ .motes{display:none} }
 </style>
 </head>
 <body>
+<div class="motes" aria-hidden="true">
+    <i style="--x:39%;--d:16s;--t:18s;--s:7px;--o:0.5;--dist:-45vh;--c:rgb(247,127,65)"></i>
+    <i style="--x:50%;--d:27s;--t:4s;--s:11px;--o:0.36;--dist:-115vh;--c:rgb(157,176,108)"></i>
+    <i style="--x:36%;--d:16s;--t:7s;--s:9px;--o:0.5;--dist:-95vh;--c:rgb(255,118,65)"></i>
+    <i style="--x:5%;--d:18s;--t:22s;--s:9px;--o:0.5;--dist:-45vh;--c:rgb(255,56,126)"></i>
+    <i style="--x:4%;--d:29s;--t:11s;--s:14px;--o:0.28;--dist:-115vh;--c:rgb(255,54,128)"></i>
+    <i style="--x:28%;--d:34s;--t:11s;--s:11px;--o:0.36;--dist:-38vh;--c:rgb(255,102,81)"></i>
+    <i style="--x:81%;--d:27s;--t:18s;--s:14px;--o:0.44;--dist:-60vh;--c:rgb(29,212,138)"></i>
+    <i style="--x:75%;--d:26s;--t:18s;--s:5px;--o:0.5;--dist:-66vh;--c:rgb(39,218,144)"></i>
+    <i style="--x:24%;--d:34s;--t:25s;--s:9px;--o:0.36;--dist:-95vh;--c:rgb(255,94,89)"></i>
+    <i style="--x:25%;--d:33s;--t:10s;--s:11px;--o:0.36;--dist:-52vh;--c:rgb(255,96,87)"></i>
+    <i style="--x:76%;--d:18s;--t:3s;--s:9px;--o:0.28;--dist:-45vh;--c:rgb(37,217,143)"></i>
+    <i style="--x:74%;--d:34s;--t:8s;--s:14px;--o:0.44;--dist:-66vh;--c:rgb(40,219,145)"></i>
+    <i style="--x:15%;--d:25s;--t:17s;--s:7px;--o:0.5;--dist:-72vh;--c:rgb(255,76,106)"></i>
+    <i style="--x:72%;--d:24s;--t:4s;--s:5px;--o:0.28;--dist:-60vh;--c:rgb(43,221,146)"></i>
+    <i style="--x:92%;--d:23s;--t:10s;--s:9px;--o:0.36;--dist:-95vh;--c:rgb(12,202,129)"></i>
+    <i style="--x:97%;--d:28s;--t:5s;--s:9px;--o:0.28;--dist:-45vh;--c:rgb(5,197,125)"></i>
+    <i style="--x:9%;--d:28s;--t:0s;--s:7px;--o:0.36;--dist:-80vh;--c:rgb(255,64,118)"></i>
+    <i style="--x:89%;--d:23s;--t:25s;--s:11px;--o:0.28;--dist:-38vh;--c:rgb(17,205,132)"></i>
+    <i style="--x:70%;--d:18s;--t:11s;--s:5px;--o:0.5;--dist:-95vh;--c:rgb(47,223,148)"></i>
+    <i style="--x:64%;--d:17s;--t:2s;--s:7px;--o:0.5;--dist:-60vh;--c:rgb(56,229,153)"></i>
+    <i style="--x:72%;--d:30s;--t:30s;--s:7px;--o:0.36;--dist:-60vh;--c:rgb(43,221,146)"></i>
+    <i style="--x:13%;--d:33s;--t:16s;--s:11px;--o:0.36;--dist:-45vh;--c:rgb(255,72,110)"></i>
+    <i style="--x:90%;--d:33s;--t:26s;--s:7px;--o:0.44;--dist:-115vh;--c:rgb(16,204,131)"></i>
+    <i style="--x:14%;--d:21s;--t:28s;--s:5px;--o:0.5;--dist:-80vh;--c:rgb(255,74,108)"></i>
+    <i style="--x:45%;--d:21s;--t:28s;--s:9px;--o:0.5;--dist:-80vh;--c:rgb(198,154,88)"></i>
+    <i style="--x:10%;--d:33s;--t:9s;--s:9px;--o:0.5;--dist:-60vh;--c:rgb(255,66,116)"></i>
+    <i style="--x:40%;--d:33s;--t:1s;--s:14px;--o:0.44;--dist:-115vh;--c:rgb(239,131,69)"></i>
+    <i style="--x:15%;--d:20s;--t:10s;--s:9px;--o:0.5;--dist:-38vh;--c:rgb(255,76,106)"></i>
+    <i style="--x:33%;--d:18s;--t:10s;--s:9px;--o:0.28;--dist:-52vh;--c:rgb(255,112,71)"></i>
+    <i style="--x:32%;--d:31s;--t:25s;--s:9px;--o:0.44;--dist:-115vh;--c:rgb(255,110,73)"></i>
+    <i style="--x:2%;--d:28s;--t:0s;--s:14px;--o:0.36;--dist:-72vh;--c:rgb(255,50,132)"></i>
+    <i style="--x:97%;--d:22s;--t:25s;--s:11px;--o:0.28;--dist:-80vh;--c:rgb(5,197,125)"></i>
+    <i style="--x:24%;--d:29s;--t:30s;--s:5px;--o:0.5;--dist:-95vh;--c:rgb(255,94,89)"></i>
+    <i style="--x:91%;--d:31s;--t:19s;--s:11px;--o:0.36;--dist:-66vh;--c:rgb(14,203,130)"></i>
+</div>
+
 <a class="skip" href="#main">Skip to content</a>
 
 <div class="bar">
@@ -963,25 +1007,6 @@ body{
 </div>
 
 <header class="hero" id="top">
-  <div class="motes" aria-hidden="true">
-    <i style="--x:61%;--d:31s;--t:17s;--s:11px;--o:0.38;--c:rgb(67,226,151)"></i>
-    <i style="--x:69%;--d:31s;--t:18s;--s:9px;--o:0.3;--c:rgb(48,224,149)"></i>
-    <i style="--x:69%;--d:25s;--t:20s;--s:13px;--o:0.3;--c:rgb(48,224,149)"></i>
-    <i style="--x:16%;--d:25s;--t:9s;--s:9px;--o:0.3;--c:rgb(255,78,104)"></i>
-    <i style="--x:72%;--d:30s;--t:22s;--s:7px;--o:0.46;--c:rgb(43,221,146)"></i>
-    <i style="--x:54%;--d:25s;--t:20s;--s:13px;--o:0.46;--c:rgb(124,195,124)"></i>
-    <i style="--x:24%;--d:27s;--t:0s;--s:13px;--o:0.3;--c:rgb(255,94,89)"></i>
-    <i style="--x:11%;--d:18s;--t:6s;--s:9px;--o:0.46;--c:rgb(255,68,114)"></i>
-    <i style="--x:7%;--d:30s;--t:14s;--s:9px;--o:0.38;--c:rgb(255,60,122)"></i>
-    <i style="--x:79%;--d:31s;--t:6s;--s:13px;--o:0.3;--c:rgb(33,214,140)"></i>
-    <i style="--x:85%;--d:22s;--t:15s;--s:7px;--o:0.46;--c:rgb(23,209,135)"></i>
-    <i style="--x:14%;--d:25s;--t:20s;--s:9px;--o:0.38;--c:rgb(255,74,108)"></i>
-    <i style="--x:74%;--d:32s;--t:2s;--s:9px;--o:0.38;--c:rgb(40,219,145)"></i>
-    <i style="--x:33%;--d:26s;--t:9s;--s:7px;--o:0.3;--c:rgb(255,112,71)"></i>
-    <i style="--x:76%;--d:30s;--t:3s;--s:11px;--o:0.3;--c:rgb(37,217,143)"></i>
-    <i style="--x:41%;--d:24s;--t:2s;--s:7px;--o:0.46;--c:rgb(231,136,73)"></i>
-  </div>
-
 
   <div class="wrap hero-grid">
     <div>
