@@ -233,7 +233,6 @@ mark.g{background:var(--grad-cool)}
 .lang-bar b.part{background:var(--muted)}
 
 /* ---------- double diamond: pure shape, banded like a retro sun ---------- */
-.dd{width:100%;height:auto;display:block}
 .dd-wrap{background:var(--card);padding:clamp(1.25rem,3vw,2.25rem)}
 .dd-phases{
   display:grid;grid-template-columns:repeat(2,1fr);gap:0;
@@ -657,19 +656,6 @@ body{
 .panel-close{border:0;padding-top:0;margin-top:var(--s4)}
 .case-link{border-radius:999px;padding:.7rem 1.1rem;margin-top:var(--s3)}
 
-/* ---------- offers ---------- */
-.offers{display:grid;gap:.7rem;border:0}
-@media (min-width:880px){.offers{grid-template-columns:repeat(3,1fr)}}
-.offer{
-  border:0;border-radius:var(--r-l);padding:1.75rem 1.5rem;
-  background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);
-}
-.offer:hover{background:rgba(255,255,255,.78)}
-.offer-n{border:0;border-radius:999px;width:48px;height:48px}
-.offer ul{border:0}
-.offer li{border:0;padding:.5rem 0 .5rem 1.3rem}
-.offer li::before{content:"";position:absolute;left:0;top:1em;width:11px;height:3px;border-radius:2px;background:var(--grad-warm)}
-
 /* ---------- toolkit ---------- */
 .kit{display:grid;gap:.55rem;border:0}
 .kit>div{
@@ -696,7 +682,6 @@ footer{border:0}
 .bar{box-shadow:0 1px 0 rgba(9,9,11,.07)}
 .hero{border:0}
 
-
 /* the reframe has to read as wrong → right */
 .case-rf .rf-from{color:var(--red-ink);text-decoration:line-through;text-decoration-thickness:2px;text-decoration-color:rgba(200,30,30,.55)}
 .case-rf .rf-arrow{color:var(--muted);font-weight:400}
@@ -705,8 +690,6 @@ footer{border:0}
 .case{margin-top:.7rem}
 .sec-head{margin-bottom:var(--s4)}
 section{padding:var(--s5) 0}
-
-.dd{width:100%;max-width:880px;margin:0 auto;overflow:visible;filter:drop-shadow(0 18px 40px rgba(255,90,90,.15))}
 
 .dd-wrap{margin-bottom:var(--s5)}
 #process{padding-bottom:var(--s4)}
@@ -759,18 +742,6 @@ h3.case-name{margin:0}
   .shot{max-width:420px;margin-inline:auto}
 }
 
-/* ---------- the diamond, demoted to a strip ---------- */
-.dd-strip{margin:0 0 var(--s4)}
-.dd-small{width:100%;max-width:360px;margin:0;filter:none}
-.dd-cap{
-  font-family:var(--display);font-weight:600;font-size:.78rem;line-height:1.5;
-  color:var(--muted);margin:.7rem 0 0;max-width:56ch;
-}
-@media (min-width:820px){
-  .dd-strip{display:flex;align-items:center;gap:var(--s4)}
-  .dd-cap{margin:0}
-}
-
 /* ---------- copyable address ---------- */
 .direct-mail{
   margin:0 0 var(--s4);padding:1.1rem 1.25rem;border-radius:var(--r-m);
@@ -805,7 +776,6 @@ h3.case-name{margin:0}
     <a class="bar-name" href="#top">Antonio Frungillo</a>
     <nav class="bar-nav" aria-label="Primary">
       <a href="#work" data-i18n="n001">Work</a>
-      <a href="#problem" data-i18n="n012">How I work</a>
       <a href="#toolkit" data-i18n="n002">What I bring</a>
       <a href="CV_Antonio_Frungillo.pdf" data-i18n="n003">CV</a>
       <div class="lang-switch" role="group" aria-label="Language" data-i18n-label="a001">
@@ -822,7 +792,6 @@ h3.case-name{margin:0}
 
   <div class="menu-panel" id="menu-panel" hidden>
     <a href="#work" data-i18n="n001">Work</a>
-    <a href="#problem" data-i18n="n012">How I work</a>
     <a href="#toolkit" data-i18n="n002">What I bring</a>
     <a href="CV_Antonio_Frungillo.pdf" data-i18n="n003">CV</a>
     <a href="#contact" data-i18n="n004">Bring me a problem</a>
@@ -834,10 +803,7 @@ h3.case-name{margin:0}
     <div>
       <p class="status" data-i18n="t001"><span class="dot" aria-hidden="true"></span><span>Innovation &amp; product &middot; Amsterdam</span></p>
       <h1 data-i18n="t002">Most projects fail because they solve <mark>the wrong&nbsp;problem.</mark></h1>
-      <p class="lead hero-sub" data-i18n="t003">
-        I start where there is no product yet. Find the real problem, test it with the people who have
-        it, then build it. Two of the four below, you can open right now.
-      </p>
+      <p class="lead hero-sub" data-i18n="t003">I start where there is no product yet. I find the problem, then build something for it. Two of the four below, you can open right now.</p>
       <div class="cta-row">
         <a class="btn btn-fill" href="#contact">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 17h.01M12 14c0-2 2.2-2.5 2.2-4.5A2.7 2.7 0 0 0 12 7a2.8 2.8 0 0 0-2.3 1.2"/></svg>
@@ -879,49 +845,17 @@ h3.case-name{margin:0}
   </div>
 </header>
 
-<div class="band">
-  <div class="wrap"><p data-i18n="t010">Every project here started as the wrong problem.</p></div>
-</div>
-
 <main id="main">
 
 <!-- 02 — WORK -->
 <section id="work" class="wrap rv">
     <h2 class="label" data-i18n="n001">Work</h2>
 
-  <div class="dd-strip">
-    <svg class="dd dd-small" viewBox="0 0 920 210" role="img" aria-labelledby="dd-title dd-desc">
-      <title id="dd-title">The Double Diamond</title>
-      <desc id="dd-desc">Two diamonds meeting at a point. The first widens to explore the problem and narrows to define it; the second widens to explore solutions and narrows to the one that ships.</desc>
-      <defs>
-        <linearGradient id="gA" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stop-color="#FF2E88"/><stop offset=".6" stop-color="#FF5A5A"/><stop offset="1" stop-color="#FF9A3D"/>
-        </linearGradient>
-        <linearGradient id="gB" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stop-color="#22E38F"/><stop offset=".6" stop-color="#6BEF6C"/><stop offset="1" stop-color="#C8F94E"/>
-        </linearGradient>
-      </defs>
-
-      <g stroke-linejoin="round" stroke-width="9">
-        <path d="M28 105 L238 24 L448 105 L238 186 Z" fill="url(#gA)" stroke="url(#gA)"/>
-        <path d="M472 105 L682 24 L892 105 L682 186 Z" fill="url(#gB)" stroke="url(#gB)"/>
-      </g>
-
-      <g stroke="#FAFAFA" stroke-width="2" opacity=".55" stroke-dasharray="3 7" stroke-linecap="round">
-        <path d="M238 32 V178"/>
-        <path d="M682 32 V178"/>
-      </g>
-    </svg>
-    <p class="dd-cap" data-i18n="ddcap">Discover &middot; Define &middot; Develop &middot; Deliver &mdash; I come in at the far left, before anyone has agreed what the problem is.</p>
-  </div>
-
-
-
   <article class="case">
     <details class="case-more">
       <summary>
         <span class="case-head">
-          <span class="case-num" data-i18n="cnm"><b>01</b> <span>Solo &mdash; thought up, designed, built, put online</span> <span>2026, live</span></span>
+          <span class="case-num" data-i18n="cnm"><b>01</b> <span>Solo</span> <span>2026, live</span></b> <span>Solo &mdash; thought up, designed, built, put online</span> <span>2026, live</span></span>
           <h3 class="case-name" data-i18n="cnn">Calm Navigation Companion</h3>
           <span class="case-rf" data-i18n="cnr"><span class="rf-from">Get me there fastest</span> <span class="rf-arrow">&rarr;</span> <span class="rf-to">Get me there without wrecking me</span></span>
         </span>
@@ -938,15 +872,12 @@ h3.case-name{margin:0}
         </dl>
 
         <div class="case-media">
-          <!-- Screenshot slot. Save a shot of the running app as assets/calm-nav-screenshot.png
-               and uncomment this block; it is sized and has alt text ready.
           <figure class="shot">
             <img src="assets/calm-nav-screenshot.png"
                  alt="The Calm Navigation Companion app on a phone, showing a calm walking route through Amsterdam."
-                 loading="lazy" decoding="async" width="880" height="1100"
+                 loading="lazy" decoding="async" width="920" height="1481"
                  onerror="this.closest('figure').hidden=true">
           </figure>
-          -->
           <div class="flow">
             <div class="flow-lane now">
               <span class="flow-tag" data-i18n="cnf9">What every map does</span>
@@ -956,7 +887,6 @@ h3.case-name{margin:0}
                 <b data-i18n="cnf3">Busiest streets</b><i>&rarr;</i>
                 <b data-i18n="cnf4">You arrive wrecked</b>
               </div>
-              <p class="flow-note" data-i18n="cnf11">Speed is the only thing anyone optimises for. For some people it is the most expensive setting there is.</p>
             </div>
             <div class="flow-lane fix">
               <span class="flow-tag" data-i18n="cnf10">What this one does</span>
@@ -966,12 +896,11 @@ h3.case-name{margin:0}
                 <b data-i18n="cnf7">A few minutes longer</b><i>&rarr;</i>
                 <b data-i18n="cnf8">You arrive fine</b>
               </div>
-              <p class="flow-note" data-i18n="cnf12">Not slower for the sake of it. Slower where it buys you something.</p>
             </div>
           </div>
         </div>
 
-        <p class="panel-lead" data-i18n="cnl">Every mapping app optimises for time. If crowds and noise drain you, the fastest route is the one that costs you most, and no map offers the other option. So I built it.</p>
+        <p class="panel-lead" data-i18n="cnl">Every mapping app optimises for time. If crowds and noise drain you, the fastest route is the one that costs you most. So I built it.</p>
         <p data-i18n="cnu">Then I read my own code back and found what a mockup would never have shown me.</p>
 
         <div class="proc">
@@ -983,7 +912,7 @@ h3.case-name{margin:0}
           <div class="proc-step">
             <div class="proc-dia" aria-hidden="true"><b>2</b></div>
             <p class="proc-ph" data-i18n="cnp2">Define</p>
-            <p data-i18n="cnt2">Every map optimises for time. Nobody offers the calm route.</p>
+            <p data-i18n="cnt2">Every map optimises for time.</p>
           </div>
           <div class="proc-step">
             <div class="proc-dia" aria-hidden="true"><b>3</b></div>
@@ -996,8 +925,6 @@ h3.case-name{margin:0}
             <p data-i18n="cnt4">Live, installable, no account needed.</p>
           </div>
         </div>
-
-        <p class="panel-close" data-i18n="cnc">Concepts don't have caching bugs. That is the whole argument for building it.</p>
           <a class="case-link" href="https://calm-navigation-companion.pages.dev" rel="noopener noreferrer">
             <span data-i18n="n008">Open the live app</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><path d="M7 17 17 7M17 7H9m8 0v8"/></svg>
@@ -1051,13 +978,13 @@ h3.case-name{margin:0}
         </div>
 
         <p class="panel-lead" data-i18n="rgl">Bins across Amsterdam get torn open for deposit containers, and the city started pulling bins out in response. Nobody had asked what the person opening the bag was actually doing.</p>
-        <p data-i18n="rgu">A woman on that street told me the bag gets torn open, everything goes everywhere, and half the time there is nothing in it. The mess is not carelessness &mdash; it is what a search leaves behind when it fails. Which makes cleaner streets and better earnings the same lever, not opposing ones.</p>
+        <p data-i18n="rgu">The mess is not carelessness; it is what a search leaves behind when it fails.</p>
 
         <div class="proc">
           <div class="proc-step">
             <div class="proc-dia" aria-hidden="true"><b>1</b></div>
             <p class="proc-ph" data-i18n="rgp1">Discover</p>
-            <p data-i18n="rgt1">Two days of interviews in the street. I never said the word rubbish once.</p>
+            <p data-i18n="rgt1">Two days of interviews in the street.</p>
           </div>
           <div class="proc-step">
             <div class="proc-dia" aria-hidden="true"><b>2</b></div>
@@ -1067,7 +994,7 @@ h3.case-name{margin:0}
           <div class="proc-step">
             <div class="proc-dia" aria-hidden="true"><b>3</b></div>
             <p class="proc-ph" data-i18n="rgp3">Develop</p>
-            <p data-i18n="rgt3">Every attempt I could find anywhere acts on the public bin. Not one acts earlier.</p>
+            <p data-i18n="rgt3">Every attempt I could find anywhere acts on the public bin.</p>
           </div>
           <div class="proc-step">
             <div class="proc-dia" aria-hidden="true"><b>4</b></div>
@@ -1095,7 +1022,7 @@ h3.case-name{margin:0}
             <div><dt data-i18n="ple2d">Evidence</dt><dd data-i18n="ple2v">Interviews with commuters, concept tested with them</dd></div>
             <div><dt data-i18n="ple3d">Made</dt><dd data-i18n="ple3v">A defined concept, priced</dd></div>
             <div><dt data-i18n="ple4d">Status</dt><dd data-i18n="ple4v">Pitched back to the brand partner</dd></div>
-            <div class="fact-wide"><dt data-i18n="plevd">Who I spoke to</dt><dd data-i18n="plev"><b>Commuters at Amsterdam Centraal</b>, then deliberately moved to the OBA library because every other team was working the same spot. Storyboard-tested afterwards with commuting friends and classmates. I expected them to complain about getting wet. They complained about the four hours after.</dd></div>
+            <div class="fact-wide"><dt data-i18n="plevd">Who I spoke to</dt><dd data-i18n="plev"><b>Commuters at Amsterdam Centraal</b>, then the OBA library. Storyboard-tested afterwards with commuting friends and classmates. I expected them to complain about getting wet. They complained about the four hours after.</b>, then deliberately moved to the OBA library because every other team was working the same spot. Storyboard-tested afterwards with commuting friends and classmates. I expected them to complain about getting wet. They complained about the four hours after.</dd></div>
         </dl>
 
         <div class="case-media">
@@ -1124,28 +1051,23 @@ h3.case-name{margin:0}
         </div>
 
         <p class="panel-lead" data-i18n="pll">A Dutch weather-gear brand, an open brief, no product category and no spec. My job was to make the direction defensible with evidence instead of taste.</p>
-        <p data-i18n="plu">Nobody complained about the commute. They complained about the four hours after it. All of the pain sat on one moment: arrival.</p>
+        <p data-i18n="plu">All of the pain sat on one moment: arrival.</p>
 
         <div class="proc">
           <div class="proc-step">
             <div class="proc-dia" aria-hidden="true"><b>1</b></div>
             <p class="proc-ph" data-i18n="plp1">Discover</p>
-            <p data-i18n="plt1">Interviews at the station, then I moved. Every other team was standing in the same spot getting the same answers.</p>
-          </div>
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>2</b></div>
-            <p class="proc-ph" data-i18n="plp2">Define</p>
-            <p data-i18n="plt2">The problem was not the rain. It was the four hours after it.</p>
+            <p data-i18n="plt1">Interviews at the station, then I moved.</p>
           </div>
           <div class="proc-step">
             <div class="proc-dia" aria-hidden="true"><b>3</b></div>
             <p class="proc-ph" data-i18n="plp3">Develop</p>
-            <p data-i18n="plt3">Shared beat personal every time. One unit serves a whole building; a gadget serves one person.</p>
+            <p data-i18n="plt3">Shared beat personal every time. One unit serves a whole building.</p>
           </div>
           <div class="proc-step">
             <div class="proc-dia" aria-hidden="true"><b>4</b></div>
             <p class="proc-ph" data-i18n="plp4">Deliver</p>
-            <p data-i18n="plt4">Tested with commuters, priced, and pitched back to the brand.</p>
+            <p data-i18n="plt4">Tested with commuters, then priced and pitched back to the brand.</p>
           </div>
         </div>
 
@@ -1184,28 +1106,7 @@ h3.case-name{margin:0}
         <p class="panel-lead" data-i18n="gpl">Loneliness and digital exclusion among people over 75 who want to keep living on their own. The team's instinct was an app.</p>
         <p data-i18n="gpu"><strong>Voice first. A real person on the line, the machine behind it.</strong> These are people who are offline by definition. An app makes the barrier the product. Same reason AI does not go at the front: a synthetic voice asking a fraud-wary 80-year-old to trust it starts out losing.</p>
 
-        <div class="proc">
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>1</b></div>
-            <p class="proc-ph" data-i18n="gpp1">Discover</p>
-            <p data-i18n="gpt1">Research, watching how older people use public space, and interviews. A roleplay about phone scams taught us more than any of it.</p>
-          </div>
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>2</b></div>
-            <p class="proc-ph" data-i18n="gpp2">Define</p>
-            <p data-i18n="gpt2">Fear of being scammed decides what this group will accept from anyone, human or machine.</p>
-          </div>
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>3</b></div>
-            <p class="proc-ph" data-i18n="gpp3">Develop</p>
-            <p data-i18n="gpt3">We put every idea we had on the table and cut until one was left standing.</p>
-          </div>
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>4</b></div>
-            <p class="proc-ph" data-i18n="gpp4">Deliver</p>
-            <p data-i18n="gpt4">A cardboard box and a phone menu standing in for the real thing. Tested on real people over 75, then judged live in front of assessors.</p>
-          </div>
-        </div>
+        <p data-i18n="gpx">We tested it with a cardboard box and a phone menu standing in for the real thing, first with people over 75 and then in front of assessors. What we learned there is why fear of being scammed decides what this group accepts from anyone, human or machine.</p>
         <a class="case-link" href="grandpod/" rel="noopener noreferrer">
           <span data-i18n="gpmvp">Open the prototype</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><path d="M7 17 17 7M17 7H9m8 0v8"/></svg>
@@ -1217,44 +1118,6 @@ h3.case-name{margin:0}
 </section>
 
 <!-- 03 — OFFER -->
-<section id="problem" class="wrap rv">
-    <h2 class="label" data-i18n="n012">How I work</h2>
-
-
-  <div class="offers">
-    <div class="offer">
-      <p class="offer-n" aria-hidden="true">A</p>
-      <h3 data-i18n="o1h">I go and find the real problem</h3>
-      <p data-i18n="o1p">I talk to the people who have it, where they actually are, and watch what they do instead of asking them to describe it.</p>
-      <ul>
-        <li data-i18n="o1a">People rarely name what is actually bothering them</li>
-        <li data-i18n="o1b">I look for the gap between what they say and what they do</li>
-        <li data-i18n="o1c">You get the problem written down, with the evidence under it</li>
-      </ul>
-    </div>
-    <div class="offer">
-      <p class="offer-n" aria-hidden="true">B</p>
-      <h3 data-i18n="o2h">I break the idea before the market does</h3>
-      <p data-i18n="o2p">I find what has been tried and why it died, then go after the assumption your idea is quietly betting on.</p>
-      <ul>
-        <li data-i18n="o2a">Most ideas have been tried already, by someone</li>
-        <li data-i18n="o2b">I test the bet that would kill it, not the comfortable ones</li>
-        <li data-i18n="o2c">A go, a rethink, or a stop &mdash; with the reasoning</li>
-      </ul>
-    </div>
-    <div class="offer">
-      <p class="offer-n" aria-hidden="true">C</p>
-      <h3 data-i18n="o3h">I build the small working version</h3>
-      <p data-i18n="o3p">Not a mockup. Something that runs, in front of people who do not work for you.</p>
-      <ul>
-        <li data-i18n="o3a">A working thing tells you what a deck never will</li>
-        <li data-i18n="o3b">I test on strangers, because colleagues are too kind</li>
-        <li data-i18n="o3c">What I make ends up online, not in a deck</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
 <!-- 04 — TOOLKIT -->
 <section id="toolkit" class="wrap rv">
   <div class="sec-head">
@@ -1262,11 +1125,10 @@ h3.case-name{margin:0}
     <div class="sec-body"><h2 data-i18n="t151">What I am actually good at.</h2></div>
   </div>
   <dl class="kit">
-    <div><dt data-i18n="k1d">Finding it</dt><dd data-i18n="k1v">Getting people to tell me what actually happens, not what they think I want to hear.</dd></div>
+    <div><dt data-i18n="k1d">Finding it</dt><dd data-i18n="k1v">Getting people to tell me what actually happens.</dd></div>
     <div><dt data-i18n="k2d">Framing it</dt><dd data-i18n="k2v">Turning a mess of research into one problem you can act on, stated plainly enough to disagree with.</dd></div>
     <div><dt data-i18n="k3d">Killing it</dt><dd data-i18n="k3v">Throwing out my own ideas early, and being able to show exactly why.</dd></div>
     <div><dt data-i18n="k4d">Building it</dt><dd data-i18n="k4v">I design and build working web products and keep them running on my own.</dd></div>
-    <div><dt data-i18n="k5d">Languages</dt><dd data-i18n="k5v"><b>Italian</b> native &middot; <b>English</b> fluent &middot; Dutch developing</dd></div>
   </dl>
 </section>
 
@@ -1276,7 +1138,7 @@ h3.case-name{margin:0}
     <p class="label" data-i18n="t160">Get in touch</p>
     <div class="sec-body">
       <h2 data-i18n="t161">Tell me what isn't working.</h2>
-      <p data-i18n="t162">Write it badly. An unfinished thought is fine &mdash; that is the normal starting point.</p>
+      <p data-i18n="t162">Write it badly. An unfinished thought is fine.</p>
     </div>
   </div>
 
@@ -1301,7 +1163,8 @@ h3.case-name{margin:0}
       </div>
       <div class="field">
         <label for="f-problem" data-i18n="t167">The problem
-          <span class="hint">Not the solution. What goes wrong, and who it annoys.</span>
+          <span class="hint">What goes wrong, and who it annoys.</span>
+        </span>
         </label>
         <textarea id="f-problem" name="problem" placeholder="People keep dropping off at the same point and we don't know why…" data-i18n-ph="p168"></textarea>
       </div>
@@ -1324,9 +1187,7 @@ h3.case-name{margin:0}
         <li data-i18n="t174"><span class="k">Live app</span><span class="v"><a href="https://calm-navigation-companion.pages.dev" rel="noopener noreferrer">calm-navigation-companion.pages.dev</a></span></li>
         <li data-i18n="t175"><span class="k">CV</span><span class="v"><a href="CV_Antonio_Frungillo.pdf">Download as PDF</a></span></li>
       </ul>
-      <p class="avail" data-i18n="t176">
-        I'm a second-year BBA Business Innovation student in Amsterdam and I take on real work
-        alongside the degree. <span class="hl">Most of what I do travels fine remotely</span> &mdash; a
+      <p class="avail" data-i18n="t176">I'm a second-year BBA Business Innovation student in Amsterdam and I take on real work alongside the degree. Most of what I do travels fine remotely.</span> &mdash; a
         call, a shared document, and time in the field where the problem actually is.
       </p>
     </div>
