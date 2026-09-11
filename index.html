@@ -899,6 +899,30 @@ body{
   .diverge circle{opacity:1}
   .diverge.drawn path,.diverge.drawn circle{animation:none}
 }
+
+
+
+/* ---------- ideas surfacing: same pen as the divergence ---------- */
+.motes{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.motes i{
+  position:absolute;left:var(--x);bottom:-10%;
+  width:var(--s);height:var(--s);border-radius:50%;
+  border:1.5px solid var(--c);background:transparent;
+  opacity:0;
+  animation:rise var(--d) linear infinite;
+  animation-delay:calc(var(--t) * -1);
+  will-change:transform,opacity;
+}
+.motes i:nth-child(3n){border-width:1px}
+.motes i:nth-child(5n){background:var(--c);border-color:transparent;width:4px;height:4px}
+@keyframes rise{
+  0%   {transform:translate3d(0,0,0) scale(.75);opacity:0}
+  14%  {opacity:var(--o)}
+  76%  {opacity:var(--o)}
+  100% {transform:translate3d(18px,-112vh,0) scale(1.1);opacity:0}
+}
+.hero .wrap{position:relative;z-index:1}
+@media (prefers-reduced-motion:reduce){ .motes{display:none} }
 </style>
 </head>
 <body>
@@ -934,6 +958,26 @@ body{
 </div>
 
 <header class="hero" id="top">
+  <div class="motes" aria-hidden="true">
+    <i style="--x:61%;--d:31s;--t:17s;--s:11px;--o:0.38;--c:rgb(67,226,151)"></i>
+    <i style="--x:69%;--d:31s;--t:18s;--s:9px;--o:0.3;--c:rgb(48,224,149)"></i>
+    <i style="--x:69%;--d:25s;--t:20s;--s:13px;--o:0.3;--c:rgb(48,224,149)"></i>
+    <i style="--x:16%;--d:25s;--t:9s;--s:9px;--o:0.3;--c:rgb(255,78,104)"></i>
+    <i style="--x:72%;--d:30s;--t:22s;--s:7px;--o:0.46;--c:rgb(43,221,146)"></i>
+    <i style="--x:54%;--d:25s;--t:20s;--s:13px;--o:0.46;--c:rgb(124,195,124)"></i>
+    <i style="--x:24%;--d:27s;--t:0s;--s:13px;--o:0.3;--c:rgb(255,94,89)"></i>
+    <i style="--x:11%;--d:18s;--t:6s;--s:9px;--o:0.46;--c:rgb(255,68,114)"></i>
+    <i style="--x:7%;--d:30s;--t:14s;--s:9px;--o:0.38;--c:rgb(255,60,122)"></i>
+    <i style="--x:79%;--d:31s;--t:6s;--s:13px;--o:0.3;--c:rgb(33,214,140)"></i>
+    <i style="--x:85%;--d:22s;--t:15s;--s:7px;--o:0.46;--c:rgb(23,209,135)"></i>
+    <i style="--x:14%;--d:25s;--t:20s;--s:9px;--o:0.38;--c:rgb(255,74,108)"></i>
+    <i style="--x:74%;--d:32s;--t:2s;--s:9px;--o:0.38;--c:rgb(40,219,145)"></i>
+    <i style="--x:33%;--d:26s;--t:9s;--s:7px;--o:0.3;--c:rgb(255,112,71)"></i>
+    <i style="--x:76%;--d:30s;--t:3s;--s:11px;--o:0.3;--c:rgb(37,217,143)"></i>
+    <i style="--x:41%;--d:24s;--t:2s;--s:7px;--o:0.46;--c:rgb(231,136,73)"></i>
+  </div>
+
+
   <div class="wrap hero-grid">
     <div>
       <p class="status" data-i18n="t001"><span class="dot" aria-hidden="true"></span><span>Innovation &amp; product &middot; Amsterdam</span></p>
