@@ -935,6 +935,15 @@ body{
 .hero,main,footer,.bar{position:relative;z-index:1}
 .bar{z-index:80}
 @media (prefers-reduced-motion:reduce){ .motes{display:none} }
+
+/* a face before a claim */
+.hero-face{
+  width:100%;height:auto;display:block;border-radius:var(--r-m);
+  margin:0 0 1.1rem;
+  aspect-ratio:638/740;object-fit:cover;object-position:50% 8%;
+}
+@media (min-width:1000px){ .hero-card{padding:1.1rem} }
+@media (max-width:999px){ .hero-face{max-width:250px} }
 </style>
 </head>
 <body>
@@ -1027,6 +1036,10 @@ body{
     </div>
 
     <div class="hero-card">
+      <img class="hero-face" src="assets/antonio.jpg"
+           alt="Antonio Frungillo outside a caf&eacute; in Amsterdam, with his Bengal cat Amanda on his shoulder."
+           loading="eager" decoding="async" width="638" height="860"
+           onerror="this.hidden=true">
       <dl>
         <div><dt data-i18n="t004">Based</dt><dd data-i18n="t005">Amsterdam &middot; remote is fine &middot; EU citizen</dd></div>
         <div><dt data-i18n="t006">Studying</dt><dd data-i18n="t007">Business Innovation</dd></div>
@@ -1363,7 +1376,7 @@ body{
         <span>GitHub</span></a></li>
       <li><a href="https://calm-navigation-companion.pages.dev" rel="noopener noreferrer">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3.5 9h17M3.5 15h17M12 3a15 15 0 0 1 0 18A15 15 0 0 1 12 3Z"/></svg>
-        <span data-i18n="ab4">The app</span></a></li>
+        <span data-i18n="ab4">Calm Companion app</span></a></li>
       <li><a href="https://www.youtube.com/@Antonio_Frungillo" rel="noopener noreferrer">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>
         <span>YouTube</span></a></li>

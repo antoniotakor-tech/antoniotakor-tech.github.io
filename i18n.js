@@ -4,7 +4,7 @@ ab7:"Quello che voglio non è complicato: un lavoro dove posso uscire, parlare c
 ab6:"Quasi ogni giorno giro la città con la mia gatta. Si chiama Amanda, è una Bengala, e sta sulla mia spalla. Ne filmo un pezzo. Suono la chitarra male.",
 ab5:"<b>Anche questa pagina.</b> Progettata e costruita da me — nessun template, nessun costruttore di siti. HTML, CSS e JavaScript puri, il codice è su GitHub, ed è bilingue da un file solo.",
 abcap:"Amanda sceglie il percorso più spesso di me.",
-ab4:"L'app",
+ab4:"Calm Companion app",
 ab3:"Sono tornato a studiare a 25 anni. Mi sembrava tardi, poi non più. Business Innovation, che in pratica vuol dire che passo il tempo a capire cosa non va davvero prima che qualcuno inizi a costruire.",
 ab2:"Sono venuto qui per fare il cuoco. Sei anni nello stesso ristorante, e prima una pizzeria. Prima ancora facevo scarpe a Napoli, modelli e controllo qualità. Niente di tutto questo sta più sul mio CV, ma è lì che ho imparato le cose che uso davvero: leggere una sala, lavorare veloce senza far cadere niente, e capire quando uno ti sta dicendo quello che pensa tu voglia sentire.",
 ab1:"Sono Antonio. Sono cresciuto a Napoli e sto ad Amsterdam dal 2018.",
