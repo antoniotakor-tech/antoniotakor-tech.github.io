@@ -286,7 +286,7 @@ section:last-of-type{border-bottom:0}
    WORK
    ============================================================ */
 .case{padding-top:var(--s4);margin-top:var(--s7)}
-.case:first-child{margin-top:0}
+.case:first-of-type{margin-top:0}
 .case-media{display:grid;gap:var(--s3)}
 .case-grid{display:grid;gap:var(--s4)}
 @media (min-width:960px){
@@ -583,7 +583,7 @@ body{
 
 /* ---------- work: names out front, everything else behind the click ---------- */
 .case{margin-top:1rem}
-.case:first-child{margin-top:0}
+.case:first-of-type{margin-top:0}
 .case-more{border-radius:var(--r-l);overflow:hidden;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur)}
 .case-more>summary{
   min-height:0;padding:clamp(1.3rem,3vw,2rem);background:transparent;
@@ -766,6 +766,52 @@ h3.case-name{margin:0}
 .dm-copy:hover{background:var(--fg);color:#fff}
 .dm-copy[data-done="1"]{background:var(--green);color:var(--fg)}
 .dm-hint{font-size:.84rem;color:var(--muted);margin:.75rem 0 0;max-width:52ch}
+
+/* ============================================================
+   AESTHETIC PASS — quieter ground, one thing leading
+   ============================================================ */
+
+/* the wash was three gradients doing decorative work. One, softer. */
+body{
+  background:
+    radial-gradient(70% 44% at 12% -6%, rgba(255,46,136,.09), transparent 60%),
+    var(--bg);
+}
+
+/* hero: more room, more confidence, tighter tracking */
+.hero{padding-top:clamp(3rem,9vh,6rem)}
+.hero h1{
+  font-size:clamp(2.3rem,6.2vw,4.6rem);
+  letter-spacing:-.042em;line-height:.98;
+  max-width:16ch;
+}
+.hero-sub{font-size:clamp(1.02rem,1.4vw,1.16rem);line-height:1.5;max-width:46ch}
+.cta-row{padding-bottom:clamp(2.5rem,6vh,4rem)}
+.status{margin-bottom:clamp(1.25rem,3vh,2rem)}
+
+/* the shipped one carries a picture and sits forward of the rest */
+.case:first-of-type .case-more{background:rgba(255,255,255,.78)}
+.case:first-of-type .case-name{font-size:clamp(1.9rem,4.4vw,3.1rem)}
+.lead-shot{
+  display:none;flex:none;width:150px;align-self:flex-start;
+  border-radius:var(--r-m);overflow:hidden;
+  background:#11151c;
+}
+.lead-shot img{width:100%;height:auto;display:block}
+@media (min-width:760px){
+  .lead-shot{display:block;width:165px;margin-left:auto;margin-right:1.25rem}
+  .case:first-of-type .case-more>summary{align-items:center}
+}
+
+/* type hierarchy: name louder, metadata quieter */
+.case-num{font-size:.66rem;letter-spacing:.18em;opacity:.72}
+.case-name{letter-spacing:-.038em}
+.case-rf{font-size:clamp(.82rem,1.4vw,.95rem)}
+
+/* surfaces: less frosting, more paper */
+.case-more{background:rgba(255,255,255,.66)}
+.hero-card,.offer,.kit>div,.avail,.direct-mail{background:rgba(255,255,255,.66)}
+.facts>div{background:rgba(255,255,255,.62)}
 </style>
 </head>
 <body>
@@ -856,6 +902,9 @@ h3.case-name{margin:0}
       <summary>
         <span class="case-head">
           <span class="case-num" data-i18n="cnm"><b>01</b> <span>Solo</span> <span>2026, live</span></b> <span>Solo &mdash; thought up, designed, built, put online</span> <span>2026, live</span></span>
+        <span class="lead-shot" aria-hidden="true">
+          <img src="assets/calm-nav-screenshot.png" alt="" loading="lazy" decoding="async" width="559" height="900">
+        </span>
           <h3 class="case-name" data-i18n="cnn">Calm Navigation Companion</h3>
           <span class="case-rf" data-i18n="cnr"><span class="rf-from">Get me there fastest</span> <span class="rf-arrow">&rarr;</span> <span class="rf-to">Get me there without wrecking me</span></span>
         </span>
@@ -872,12 +921,6 @@ h3.case-name{margin:0}
         </dl>
 
         <div class="case-media">
-          <figure class="shot">
-            <img src="assets/calm-nav-screenshot.png"
-                 alt="The Calm Navigation Companion app on a phone, showing a calm walking route through Amsterdam."
-                 loading="lazy" decoding="async" width="920" height="1481"
-                 onerror="this.closest('figure').hidden=true">
-          </figure>
           <div class="flow">
             <div class="flow-lane now">
               <span class="flow-tag" data-i18n="cnf9">What every map does</span>
