@@ -1,5 +1,6 @@
 /* Italiano. Scritto in italiano, non tradotto dall'inglese. */
 window.IT = {
+abcap:"Amanda sceglie il percorso più spesso di me.",
 ab4:"L'app",
 ab3:"Quello che mi interessa è il pezzo prima che qualcuno abbia deciso cosa costruire: uscire, parlare con persone che non sono in riunione, e tornare con qualcosa che nessuno si aspettava. E poi costruirlo, così esiste invece di essere raccontato.",
 ab2:"Prima dell'università ho fatto il cuoco nei ristoranti di Amsterdam per sei anni, ed è lì che ho imparato a leggere una sala e a reggere un servizio senza far cadere niente. Cammino per la città quasi ogni giorno con la mia gatta Bengala, Amanda, e ne filmo un pezzo. Suono la chitarra male e costruisco cose per il web bene.",
