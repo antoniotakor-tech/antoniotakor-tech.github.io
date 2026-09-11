@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Antonio Frungillo — I find the real problem first</title>
-<meta name="description" content="Antonio Frungillo, innovation and product, Amsterdam. I start where there is no product yet: find the real problem, test it with the people who have it, then build something that works.">
+<meta name="description" content="Antonio Frungillo — innovation and product, Amsterdam. I find the real problem, design the answer, and ship it as working code. This site included: designed and built by me, no template.">
 <meta name="author" content="Antonio Frungillo">
 <link rel="canonical" href="https://antoniotakor-tech.github.io/">
 <meta property="og:type" content="website">
@@ -876,31 +876,6 @@ body{
 /* [hidden] must beat the class that sets display, or the menu never closes */
 .menu-panel[hidden]{display:none!important}
 
-/* ---------- diverge, converge, twice ---------- */
-.diverge{
-  max-width:var(--maxw);margin:0 auto;
-  padding:clamp(.5rem,2vh,1.5rem) clamp(1.25rem,4vw,3rem) clamp(1rem,3vh,2rem);
-}
-.diverge svg{width:100%;height:auto;display:block;overflow:visible}
-.diverge path{
-  stroke-dasharray:1400;stroke-dashoffset:1400;
-}
-.diverge.drawn path{
-  animation:draw 1.5s cubic-bezier(.65,0,.35,1) forwards;
-  animation-delay:calc(var(--i) * 70ms);
-}
-.diverge circle{opacity:0}
-.diverge.drawn circle{animation:dot .5s ease forwards;animation-delay:1.5s}
-@keyframes draw{to{stroke-dashoffset:0}}
-@keyframes dot{to{opacity:1}}
-
-@media (prefers-reduced-motion:reduce){
-  .diverge path{stroke-dashoffset:0}
-  .diverge circle{opacity:1}
-  .diverge.drawn path,.diverge.drawn circle{animation:none}
-}
-
-
 
 /* ---------- ideas surfacing: same pen as the divergence ---------- */
 .motes{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
@@ -923,6 +898,36 @@ body{
 }
 .hero .wrap{position:relative;z-index:1}
 @media (prefers-reduced-motion:reduce){ .motes{display:none} }
+
+/* ---------- diverge, converge, twice — and always in motion ---------- */
+.diverge{
+  max-width:var(--maxw);margin:0 auto;
+  padding:clamp(.5rem,2vh,1.5rem) clamp(1.25rem,4vw,3rem) clamp(1rem,3vh,2rem);
+}
+.diverge svg{width:100%;height:auto;display:block;overflow:visible}
+.diverge path{
+  stroke-dasharray:16 26;
+  animation:flow 2.8s linear infinite;
+  animation-delay:calc(var(--i) * -220ms);
+  opacity:0;transition:opacity .7s ease;
+}
+.diverge.drawn path{opacity:inherit}
+.diverge circle{opacity:0;transition:opacity .7s ease .3s}
+.diverge.drawn circle{opacity:1}
+@keyframes flow{ to{ stroke-dashoffset:-42 } }
+
+@media (prefers-reduced-motion:reduce){
+  .diverge path{animation:none;stroke-dasharray:none;opacity:inherit}
+  .diverge circle{opacity:1}
+}
+
+.colophon{
+  margin-top:var(--s3);padding:1rem 1.15rem;border-radius:var(--r-m);
+  background:rgba(255,255,255,.66);
+  -webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);
+  font-size:.93rem;max-width:56ch;
+}
+.colophon b{color:var(--fg);font-weight:800}
 </style>
 </head>
 <body>
@@ -999,7 +1004,7 @@ body{
     <div class="hero-card">
       <dl>
         <div><dt data-i18n="t004">Based</dt><dd data-i18n="t005">Amsterdam &middot; remote is fine &middot; EU citizen</dd></div>
-        <div><dt data-i18n="t006">Studying</dt><dd data-i18n="t007">BA Business Innovation, Inholland</dd></div>
+        <div><dt data-i18n="t006">Studying</dt><dd data-i18n="t007">Business Innovation</dd></div>
         <div>
           <dt data-i18n="t008">Languages</dt>
           <dd data-i18n="t009">
@@ -1320,7 +1325,7 @@ body{
     </figure>
 
     <div>
-      <p class="about-lead" data-i18n="ab1">I&rsquo;m Antonio. Italian, living in Amsterdam, studying Business Innovation at Inholland.</p>
+      <p class="about-lead" data-i18n="ab1">I&rsquo;m Antonio. Italian, living in Amsterdam, studying Business Innovation.</p>
       <p data-i18n="ab2">Before the degree I cooked in Amsterdam restaurants for six years, which is where I learned to read a room and work a service without dropping anything. I walk the city most days with my Bengal cat, Amanda, and film some of it. I play guitar badly and build web things properly.</p>
       <p data-i18n="ab3">What I care about is the bit before anyone has decided what to build &mdash; going outside, talking to people who are not in the meeting, and coming back with something nobody expected. Then building it, so it exists rather than being described.</p>
     </div>
@@ -1337,6 +1342,7 @@ body{
         <span>Email</span></a></li>
     </ul>
   </div>
+  <p class="colophon" data-i18n="ab5"><b>This page, too.</b> Designed and built by me &mdash; no template, no website builder, no page builder. Plain HTML, CSS and JavaScript, the source is on GitHub, and it is bilingual off one file.</p>
 </section>
 
 <section id="contact" class="wrap rv">

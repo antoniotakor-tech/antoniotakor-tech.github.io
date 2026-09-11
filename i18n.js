@@ -1,10 +1,11 @@
 /* Italiano. Scritto in italiano, non tradotto dall'inglese. */
 window.IT = {
+ab5:"<b>Anche questa pagina.</b> Progettata e costruita da me — nessun template, nessun costruttore di siti. HTML, CSS e JavaScript puri, il codice è su GitHub, ed è bilingue da un file solo.",
 abcap:"Amanda sceglie il percorso più spesso di me.",
 ab4:"L'app",
 ab3:"Quello che mi interessa è il pezzo prima che qualcuno abbia deciso cosa costruire: uscire, parlare con persone che non sono in riunione, e tornare con qualcosa che nessuno si aspettava. E poi costruirlo, così esiste invece di essere raccontato.",
 ab2:"Prima dell'università ho fatto il cuoco nei ristoranti di Amsterdam per sei anni, ed è lì che ho imparato a leggere una sala e a reggere un servizio senza far cadere niente. Cammino per la città quasi ogni giorno con la mia gatta Bengala, Amanda, e ne filmo un pezzo. Suono la chitarra male e costruisco cose per il web bene.",
-ab1:"Sono Antonio. Italiano, vivo ad Amsterdam, studio Business Innovation alla Inholland.",
+ab1:"Sono Antonio. Italiano, vivo ad Amsterdam, studio Business Innovation.",
 n013:"Io",
 cnb4:"<b>Audit</b> del mio stesso codice, che ha trovato tre errori che un mockup non fa vedere. Tutti e tre corretti.",
 cnb3:"<b>Pubblicazione</b> come PWA installabile, con la chiave di routing dietro al server: nel browser non arriva mai.",
@@ -22,7 +23,7 @@ t003:"Trovo il problema per strada, progetto la cosa che lo risolve, e poi la co
 t004:"Dove sono",
 t005:"Amsterdam &middot; anche da remoto &middot; cittadino UE",
 t006:"Studio",
-t007:"BA Business Innovation, Inholland",
+t007:"Business Innovation",
 t008:"Lingue",
 t009:"<div class=\"langs\"> <div class=\"lang\"> <span class=\"lang-n\">Italiano <i>madrelingua</i></span> <span class=\"lang-bar\" aria-hidden=\"true\"><b class=\"on\"></b><b class=\"on\"></b><b class=\"on\"></b><b class=\"on\"></b></span> </div> <div class=\"lang\"> <span class=\"lang-n\">Inglese <i>fluente</i></span> <span class=\"lang-bar\" aria-hidden=\"true\"><b class=\"on\"></b><b class=\"on\"></b><b class=\"on\"></b><b class=\"on\"></b></span> </div> <div class=\"lang\"> <span class=\"lang-n\">Olandese <i>in corso</i></span> <span class=\"lang-bar\" aria-hidden=\"true\"><b class=\"part\"></b><b class=\"part\"></b><b></b><b></b></span> </div> </div>",
 t150:"04 &mdash; Competenze",
