@@ -196,13 +196,13 @@ cne4d:"Stato",  cne4v:"Pubblica. Chiunque può aprirla adesso"
 Object.assign(window.IT, {
 /* riga delle prove */
 cnevd:"Con chi ho parlato",
-cnev:"<b>Ancora con nessuno.</b> Nata dalla ricerca desk e dal camminare le stesse strade a orari diversi. <mark class=\"todo\">[[test con persone sensibili agli stimoli — NON FATTO]]</mark> L'assunzione che è saltata era la mia: pensavo che pubblicare fosse il traguardo. Rileggendo il mio codice ho trovato tre errori che un mockup non ti mostra.",
+cnev:"<b>Ancora nessuno.</b> Nata dalla ricerca desk e dal camminare le stesse strade a orari diversi. L'assunzione che è saltata era la mia: pensavo che pubblicare fosse il traguardo. Rileggendo il mio codice ho trovato tre errori che un mockup non ti mostra. <b>Prossimo passo:</b> metterla in mano a chi è sensibile agli stimoli, e costruire la versione dopo su quello che mi dicono.",
 rgevd:"Con chi ho parlato",
-rgev:"<b>Otto persone in strada, in due giorni</b> — Amsterdam Centraal, un parco sul canale, lungo i canali. <mark class=\"todo\">[[date esatte — DA COMPLETARE]]</mark> Mi aspettavo lamentele sui rifiuti. Nessuno li ha tirati fuori da solo. Quello che ha fatto saltare l'assunzione è arrivato per ultimo: una residente da diciassette anni mi ha detto che il sacco viene strappato e metà delle volte dentro non c'è niente.",
+rgev:"<b>Otto persone in strada, in due giorni</b> — Amsterdam Centraal, un parco sul canale, lungo i canali. Mi aspettavo lamentele sui rifiuti. Nessuno li ha tirati fuori da solo. Quello che ha fatto saltare l'assunzione è arrivato per ultimo: una residente da diciassette anni mi ha detto che il sacco viene strappato e metà delle volte dentro non c'è niente.",
 plevd:"Con chi ho parlato",
-plev:"<b>Pendolari ad Amsterdam Centraal</b>, poi spostato apposta alla biblioteca OBA perché tutti gli altri gruppi lavoravano lo stesso punto. <mark class=\"todo\">[[quante persone, in quanto tempo — DA COMPLETARE]]</mark> Mi aspettavo si lamentassero di bagnarsi. Si lamentavano delle quattro ore dopo.",
+plev:"<b>Pendolari ad Amsterdam Centraal</b>, poi spostato apposta alla biblioteca OBA perché tutti gli altri gruppi lavoravano lo stesso punto. Poi testato con uno storyboard su amici pendolari e compagni di corso. Mi aspettavo si lamentassero di bagnarsi. Si lamentavano delle quattro ore dopo.",
 gpevd:"Con chi ho parlato",
-gpev:"<b>Una ventina di persone mentre stringevamo</b>, più osservazione di come gli anziani usano gli spazi pubblici, e test con partecipanti reali over 75. <mark class=\"todo\">[[dove e quando — DA COMPLETARE]]</mark> L'assunzione che è saltata era del gruppo: volevamo fare un'app per persone definite dall'essere tagliate fuori dalle app.",
+gpev:"<b>Una ventina di persone mentre stringevamo</b>, più osservazione di come gli anziani usano gli spazi pubblici. Testato con partecipanti reali over 75, poi valutato dal vivo a una fiera pubblica di prototipi. L'assunzione che è saltata era del gruppo: volevamo fare un'app per persone definite dall'essere tagliate fuori dalle app.",
 
 /* diamante compatto */
 ddcap:"Scoprire &middot; Definire &middot; Sviluppare &middot; Consegnare — io entro all'estrema sinistra, prima che qualcuno abbia deciso quale sia il problema.",
