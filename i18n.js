@@ -1,5 +1,7 @@
 /* Italiano. Scritto in italiano, non tradotto dall'inglese. */
 window.IT = {
+a001:"Lingua",
+a002:"Menu",
 n012:"Come lavoro",
 t001:"<span class=\"dot\" aria-hidden=\"true\"></span><span>Innovazione e prodotto &middot; Amsterdam</span>",
 t002:"Quasi tutti i progetti falliscono perch&eacute; risolvono <mark>il problema&nbsp;sbagliato.</mark>",
@@ -15,7 +17,7 @@ t011:"01 &mdash; Come lavoro",
 t012:"Due diamanti. Quasi tutti saltano il primo.",
 t013:"Entro all&rsquo;inizio di tutto, quando nessuno ha ancora deciso quale sia il problema. &Egrave; l&igrave; che si fanno gli errori che costano.",
 t150:"04 &mdash; Competenze",
-t151:"Cosa so fare con le mani.",
+t151:"Cosa so fare davvero.",
 t160:"05 &mdash; Scrivimi",
 t161:"Dimmi cosa non funziona.",
 t162:"Scrivilo anche male. Un pensiero a met&agrave; va benissimo: si parte quasi sempre da l&igrave;.",
@@ -31,7 +33,7 @@ t171:"<span class=\"k\">Email</span><span class=\"v\"><a href=\"mailto:antoniota
 t172:"<span class=\"k\">Telefono</span><span class=\"v\"><a href=\"tel:+31627162069\">+31 6 27 16 20 69</a></span>",
 t173:"<span class=\"k\">Codice</span><span class=\"v\"><a href=\"https://github.com/antoniotakor-tech\" rel=\"noopener\">github.com/antoniotakor-tech</a></span>",
 t174:"<span class=\"k\">App online</span><span class=\"v\"><a href=\"https://calm-navigation-companion.pages.dev\" rel=\"noopener\">calm-navigation-companion.pages.dev</a></span>",
-t175:"<span class=\"k\">Documenti</span><span class=\"v\"><a href=\"CV_Antonio_Frungillo.pdf\">CV</a> &middot; <a href=\"Portfolio_Antonio_Frungillo.pdf\">Portfolio (PDF)</a></span>",
+t175:"<span class=\"k\">CV</span><span class=\"v\"><a href=\"CV_Antonio_Frungillo.pdf\">Scarica il PDF</a></span>",
 t176:"Sono al secondo anno di BBA Business Innovation ad Amsterdam e accanto allo studio prendo lavori veri. <span class=\"hl\">Quasi tutto quello che faccio si pu&ograve; fare da remoto</span>: una call, un documento condiviso, e del tempo sul campo dove il problema c&rsquo;&egrave; per davvero.",
 t177:"&copy; 2026 Antonio Frungillo &middot; Amsterdam",
 f001:"Come va adesso",
@@ -169,3 +171,24 @@ k4v:"Progetto e costruisco prodotti web che funzionano, e li tengo in piedi da s
 k5d:"Lingue",
 k5v:"<b>Italiano</b> madrelingua &middot; <b>Inglese</b> fluente &middot; Olandese in corso"
 };
+
+Object.assign(window.IT, {
+rge1d:"Ruolo", rge1v:"Da solo — ricerca, inquadramento, concept",
+rge2d:"Prove",  rge2v:"Interviste in strada e osservazione diretta dei cestini",
+rge3d:"Fatto",  rge3v:"Un modello di raccolta e un primo pilota quantificato",
+rge4d:"Stato",  rge4v:"Proposto. Il pilota non è ancora partito",
+
+ple1d:"Ruolo", ple1v:"Product manager, in gruppo",
+ple2d:"Prove",  ple2v:"Interviste con i pendolari, concept testato con loro",
+ple3d:"Fatto",  ple3v:"Un concept definito, con un prezzo",
+ple4d:"Stato",  ple4v:"Presentato al partner di marca",
+
+gpe1d:"Ruolo", gpe1v:"Concept e validazione, in un gruppo di sei",
+gpe2d:"Prove",  gpe2v:"Testato su persone over 75, poi valutato dal vivo",
+gpe3d:"Fatto",  gpe3v:"Un prototipo fisico funzionante e un MVP nel browser",
+
+cne1d:"Ruolo", cne1v:"Da solo — dall'inizio alla fine",
+cne2d:"Prove",  cne2v:"Pubblicata, e poi riletta riga per riga in produzione",
+cne3d:"Fatto",  cne3v:"Una web app online e installabile",
+cne4d:"Stato",  cne4v:"Pubblica. Chiunque può aprirla adesso"
+});
