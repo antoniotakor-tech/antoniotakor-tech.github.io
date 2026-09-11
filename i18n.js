@@ -1,11 +1,13 @@
 /* Italiano. Scritto in italiano, non tradotto dall'inglese. */
 window.IT = {
+ab7:"Quello che voglio non è complicato: un lavoro dove posso uscire, parlare con la gente, e poi costruire la cosa.",
+ab6:"Quasi ogni giorno giro la città con la mia gatta. Si chiama Amanda, è una Bengala, e sta sulla mia spalla. Ne filmo un pezzo. Suono la chitarra male.",
 ab5:"<b>Anche questa pagina.</b> Progettata e costruita da me — nessun template, nessun costruttore di siti. HTML, CSS e JavaScript puri, il codice è su GitHub, ed è bilingue da un file solo.",
 abcap:"Amanda sceglie il percorso più spesso di me.",
 ab4:"L'app",
-ab3:"Quello che mi interessa è il pezzo prima che qualcuno abbia deciso cosa costruire: uscire, parlare con persone che non sono in riunione, e tornare con qualcosa che nessuno si aspettava. E poi costruirlo, così esiste invece di essere raccontato.",
-ab2:"Prima dell'università ho fatto il cuoco nei ristoranti di Amsterdam per sei anni, ed è lì che ho imparato a leggere una sala e a reggere un servizio senza far cadere niente. Cammino per la città quasi ogni giorno con la mia gatta Bengala, Amanda, e ne filmo un pezzo. Suono la chitarra male e costruisco cose per il web bene.",
-ab1:"Sono Antonio. Italiano, vivo ad Amsterdam, studio Business Innovation.",
+ab3:"Sono tornato a studiare a 25 anni. Mi sembrava tardi, poi non più. Business Innovation, che in pratica vuol dire che passo il tempo a capire cosa non va davvero prima che qualcuno inizi a costruire.",
+ab2:"Sono venuto qui per fare il cuoco. Sei anni nello stesso ristorante, e prima una pizzeria. Prima ancora facevo scarpe a Napoli, modelli e controllo qualità. Niente di tutto questo sta più sul mio CV, ma è lì che ho imparato le cose che uso davvero: leggere una sala, lavorare veloce senza far cadere niente, e capire quando uno ti sta dicendo quello che pensa tu voglia sentire.",
+ab1:"Sono Antonio. Sono cresciuto a Napoli e sto ad Amsterdam dal 2018.",
 n013:"Io",
 cnb4:"<b>Audit</b> del mio stesso codice, che ha trovato tre errori che un mockup non fa vedere. Tutti e tre corretti.",
 cnb3:"<b>Pubblicazione</b> come PWA installabile, con la chiave di routing dietro al server: nel browser non arriva mai.",
