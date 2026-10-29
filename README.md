@@ -8,7 +8,7 @@ it, then build something that works.
 ## What's on it
 
 - **How I work** — the process, and where I come into it
-- **Work** — four projects. Click one to see how it actually went
+- **Work** — five projects. Click one to see how it actually went
 - **How I work with people** — the three ways I usually get brought in
 - **Contact** — a form that opens your own mail app, no backend
 
