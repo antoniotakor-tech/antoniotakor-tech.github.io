@@ -11,12 +11,9 @@
 <meta property="og:title" content="Antonio Frungillo — I find the real problem first">
 <meta property="og:description" content="Innovation and product, Amsterdam. Research, reframing, and things that actually ship.">
 <meta property="og:url" content="https://antoniotakor-tech.github.io/">
-<meta name="theme-color" content="#FAFAFA">
+<meta name="theme-color" content="#0F151C">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 
 <style>
 /* ============================================================
@@ -908,29 +905,6 @@ body{
 }
 .colophon b{color:var(--fg);font-weight:800}
 
-/* ---------- ideas surfacing: dense at the floor, thinning upward ---------- */
-.motes{
-  position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0;
-  -webkit-mask-image:linear-gradient(to top,#000 0%,rgba(0,0,0,.62) 32%,rgba(0,0,0,.24) 64%,transparent 96%);
-          mask-image:linear-gradient(to top,#000 0%,rgba(0,0,0,.62) 32%,rgba(0,0,0,.24) 64%,transparent 96%);
-}
-.motes i{
-  position:absolute;left:var(--x);bottom:-6%;
-  width:var(--s);height:var(--s);border-radius:50%;
-  border:1.5px solid var(--c);background:transparent;
-  opacity:0;
-  animation:rise var(--d) linear infinite;
-  animation-delay:calc(var(--t) * -1);
-  will-change:transform,opacity;
-}
-.motes i:nth-child(3n){border-width:1px}
-.motes i:nth-child(5n){background:var(--c);border-color:transparent;width:4px;height:4px}
-@keyframes rise{
-  0%   {transform:translate3d(0,0,0) scale(.7);opacity:0}
-  10%  {opacity:var(--o)}
-  70%  {opacity:calc(var(--o) * .55)}
-  100% {transform:translate3d(16px,var(--dist),0) scale(1.08);opacity:0}
-}
 /* page content sits above the field */
 .hero,main,footer,.bar{position:relative;z-index:1}
 .bar{z-index:80}
@@ -945,44 +919,10 @@ body{
 @media (min-width:1000px){ .hero-card{padding:1.1rem} }
 @media (max-width:999px){ .hero-face{max-width:250px} }
 </style>
+<link rel="preload" href="assets/fonts/barlow-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="theme.css?v=4">
 </head>
 <body>
-<div class="motes" aria-hidden="true">
-    <i style="--x:39%;--d:16s;--t:18s;--s:7px;--o:0.5;--dist:-45vh;--c:rgb(247,127,65)"></i>
-    <i style="--x:50%;--d:27s;--t:4s;--s:11px;--o:0.36;--dist:-115vh;--c:rgb(157,176,108)"></i>
-    <i style="--x:36%;--d:16s;--t:7s;--s:9px;--o:0.5;--dist:-95vh;--c:rgb(255,118,65)"></i>
-    <i style="--x:5%;--d:18s;--t:22s;--s:9px;--o:0.5;--dist:-45vh;--c:rgb(255,56,126)"></i>
-    <i style="--x:4%;--d:29s;--t:11s;--s:14px;--o:0.28;--dist:-115vh;--c:rgb(255,54,128)"></i>
-    <i style="--x:28%;--d:34s;--t:11s;--s:11px;--o:0.36;--dist:-38vh;--c:rgb(255,102,81)"></i>
-    <i style="--x:81%;--d:27s;--t:18s;--s:14px;--o:0.44;--dist:-60vh;--c:rgb(29,212,138)"></i>
-    <i style="--x:75%;--d:26s;--t:18s;--s:5px;--o:0.5;--dist:-66vh;--c:rgb(39,218,144)"></i>
-    <i style="--x:24%;--d:34s;--t:25s;--s:9px;--o:0.36;--dist:-95vh;--c:rgb(255,94,89)"></i>
-    <i style="--x:25%;--d:33s;--t:10s;--s:11px;--o:0.36;--dist:-52vh;--c:rgb(255,96,87)"></i>
-    <i style="--x:76%;--d:18s;--t:3s;--s:9px;--o:0.28;--dist:-45vh;--c:rgb(37,217,143)"></i>
-    <i style="--x:74%;--d:34s;--t:8s;--s:14px;--o:0.44;--dist:-66vh;--c:rgb(40,219,145)"></i>
-    <i style="--x:15%;--d:25s;--t:17s;--s:7px;--o:0.5;--dist:-72vh;--c:rgb(255,76,106)"></i>
-    <i style="--x:72%;--d:24s;--t:4s;--s:5px;--o:0.28;--dist:-60vh;--c:rgb(43,221,146)"></i>
-    <i style="--x:92%;--d:23s;--t:10s;--s:9px;--o:0.36;--dist:-95vh;--c:rgb(12,202,129)"></i>
-    <i style="--x:97%;--d:28s;--t:5s;--s:9px;--o:0.28;--dist:-45vh;--c:rgb(5,197,125)"></i>
-    <i style="--x:9%;--d:28s;--t:0s;--s:7px;--o:0.36;--dist:-80vh;--c:rgb(255,64,118)"></i>
-    <i style="--x:89%;--d:23s;--t:25s;--s:11px;--o:0.28;--dist:-38vh;--c:rgb(17,205,132)"></i>
-    <i style="--x:70%;--d:18s;--t:11s;--s:5px;--o:0.5;--dist:-95vh;--c:rgb(47,223,148)"></i>
-    <i style="--x:64%;--d:17s;--t:2s;--s:7px;--o:0.5;--dist:-60vh;--c:rgb(56,229,153)"></i>
-    <i style="--x:72%;--d:30s;--t:30s;--s:7px;--o:0.36;--dist:-60vh;--c:rgb(43,221,146)"></i>
-    <i style="--x:13%;--d:33s;--t:16s;--s:11px;--o:0.36;--dist:-45vh;--c:rgb(255,72,110)"></i>
-    <i style="--x:90%;--d:33s;--t:26s;--s:7px;--o:0.44;--dist:-115vh;--c:rgb(16,204,131)"></i>
-    <i style="--x:14%;--d:21s;--t:28s;--s:5px;--o:0.5;--dist:-80vh;--c:rgb(255,74,108)"></i>
-    <i style="--x:45%;--d:21s;--t:28s;--s:9px;--o:0.5;--dist:-80vh;--c:rgb(198,154,88)"></i>
-    <i style="--x:10%;--d:33s;--t:9s;--s:9px;--o:0.5;--dist:-60vh;--c:rgb(255,66,116)"></i>
-    <i style="--x:40%;--d:33s;--t:1s;--s:14px;--o:0.44;--dist:-115vh;--c:rgb(239,131,69)"></i>
-    <i style="--x:15%;--d:20s;--t:10s;--s:9px;--o:0.5;--dist:-38vh;--c:rgb(255,76,106)"></i>
-    <i style="--x:33%;--d:18s;--t:10s;--s:9px;--o:0.28;--dist:-52vh;--c:rgb(255,112,71)"></i>
-    <i style="--x:32%;--d:31s;--t:25s;--s:9px;--o:0.44;--dist:-115vh;--c:rgb(255,110,73)"></i>
-    <i style="--x:2%;--d:28s;--t:0s;--s:14px;--o:0.36;--dist:-72vh;--c:rgb(255,50,132)"></i>
-    <i style="--x:97%;--d:22s;--t:25s;--s:11px;--o:0.28;--dist:-80vh;--c:rgb(5,197,125)"></i>
-    <i style="--x:24%;--d:29s;--t:30s;--s:5px;--o:0.5;--dist:-95vh;--c:rgb(255,94,89)"></i>
-    <i style="--x:91%;--d:31s;--t:19s;--s:11px;--o:0.36;--dist:-66vh;--c:rgb(14,203,130)"></i>
-</div>
 
 <a class="skip" href="#main">Skip to content</a>
 
@@ -1075,8 +1015,8 @@ body{
     <svg viewBox="0 0 900 120" preserveAspectRatio="xMidYMid meet">
       <defs>
         <linearGradient id="dg" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stop-color="#FF2E88"/><stop offset=".38" stop-color="#FF7A3D"/>
-          <stop offset=".62" stop-color="#3BE79B"/><stop offset="1" stop-color="#00C27A"/>
+          <stop offset="0" stop-color="#D6AB52"/><stop offset=".38" stop-color="#E8C77A"/>
+          <stop offset=".62" stop-color="#7FB28A"/><stop offset="1" stop-color="#5E9A6B"/>
         </linearGradient>
       </defs>
       <g fill="none" stroke-linecap="round">
@@ -1631,6 +1571,21 @@ body{
   setTimeout(function(){ d.classList.add('drawn'); }, 4000);   /* never leave it undrawn */
 })();
 
+/* each section's content arrives from a different side */
+(function(){
+  var SEL = '.sec-head, .case, .offer, .kit > div, .about-grid > *, .contact-grid > *, .dd-wrap';
+  Array.prototype.forEach.call(document.querySelectorAll('main section'), function(sec, si){
+    var all = Array.prototype.slice.call(sec.querySelectorAll(SEL));
+    var items = all.filter(function(el){ return !all.some(function(o){ return o !== el && o.contains(el); }); });
+    items.forEach(function(el, i){
+      var from = el.classList.contains('sec-head') ? 'left' : (i % 3 === 2 ? 'bottom' : ((i + si) % 2 ? 'right' : 'left'));
+      el.classList.add('rv');
+      if(from !== 'bottom') el.setAttribute('data-from', from);
+      el.style.setProperty('--d', Math.min(i * 0.06, 0.3) + 's');
+    });
+  });
+})();
+
 /* reveal on scroll — subtle, with a failsafe so content can never stay hidden */
 (function(){
   var els = Array.prototype.slice.call(document.querySelectorAll('.rv'));
@@ -1748,6 +1703,31 @@ body{
       + '?subject=' + encodeURIComponent(subject)
       + '&body='    + encodeURIComponent(body);
   });
+})();
+
+/* top bar: hides while scrolling down, returns on scroll up; highlights the section you are in */
+(function(){
+  var bar = document.querySelector('.bar'); if(!bar) return;
+  var menuBtn = document.getElementById('menu-btn'), last = window.scrollY;
+  window.addEventListener('scroll', function(){
+    var y = window.scrollY, d = y - last;
+    var open = menuBtn && menuBtn.getAttribute('aria-expanded') === 'true';
+    if(y < 80 || open || bar.contains(document.activeElement)) bar.classList.remove('hide');
+    else if(d > 6) bar.classList.add('hide');
+    else if(d < -6) bar.classList.remove('hide');
+    if(Math.abs(d) > 6) last = y;
+  }, { passive:true });
+  bar.addEventListener('focusin', function(){ bar.classList.remove('hide'); });
+  var links = Array.prototype.slice.call(document.querySelectorAll('.bar-nav a[href^="#"]'));
+  if('IntersectionObserver' in window && links.length){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(!e.isIntersecting) return;
+        links.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id); });
+      });
+    }, { rootMargin:'-45% 0px -50% 0px' });
+    Array.prototype.forEach.call(document.querySelectorAll('main section[id]'), function(s){ io.observe(s); });
+  }
 })();
 </script>
 </body>
