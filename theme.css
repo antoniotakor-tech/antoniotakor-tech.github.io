@@ -200,7 +200,7 @@ main{overflow-x:clip}
 :root{
   --r:8px; --r-s:6px; --r-m:8px; --r-l:10px;
   --shadow:0 1px 2px rgba(0,0,0,.35),0 24px 48px -26px rgba(0,0,0,.8);
-  --glow:0 12px 26px -14px rgba(224,180,90,.6);
+  --glow:0 12px 26px -16px rgba(0,0,0,.7);
 }
 
 /* corners */
@@ -224,7 +224,7 @@ main{overflow-x:clip}
 .btn:hover,.case-link:hover,.dm-copy:hover,.links a:hover{transform:translateY(-2px)}
 
 /* air */
-.hero{padding-top:clamp(4rem,11vh,7.5rem);background:radial-gradient(55% 90% at 88% 8%,rgba(224,180,90,.08),transparent 70%)}
+.hero{padding-top:clamp(4rem,11vh,7.5rem)}
 main>section.wrap{padding-top:clamp(4.5rem,9vw,7.5rem);padding-bottom:clamp(4rem,8vw,6.5rem)}
 .case{margin-top:1.1rem}
 .kit{gap:.9rem}
@@ -236,3 +236,10 @@ body{font-feature-settings:"kern","liga";line-height:1.65}
 h1,h2,h3,.case-name,.about-lead{text-wrap:balance}
 .hero-sub{font-size:clamp(1.05rem,1.5vw,1.2rem);line-height:1.6}
 .case-name{letter-spacing:.015em}
+
+/* click-to-enlarge image viewer */
+.zoomable{cursor:zoom-in}
+dialog.lightbox{border:0;padding:0;background:transparent;max-width:96vw;max-height:94vh;overflow:visible}
+dialog.lightbox::backdrop{background:rgba(8,12,17,.92)}
+.lightbox img{display:block;max-width:94vw;max-height:88vh;border-radius:8px;box-shadow:var(--shadow);cursor:zoom-out}
+.lb-x{position:fixed;top:1rem;right:1rem;width:48px;height:48px;border:0;background:var(--accent);color:var(--on-accent);font-size:1.8rem;line-height:1;cursor:pointer}
