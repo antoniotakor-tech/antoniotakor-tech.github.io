@@ -920,7 +920,7 @@ body{
 @media (max-width:999px){ .hero-face{max-width:250px} }
 </style>
 <link rel="preload" href="assets/fonts/barlow-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="theme.css?v=12">
+<link rel="stylesheet" href="theme.css?v=14">
 </head>
 <body>
 <svg class="bgfx" aria-hidden="true" focusable="false" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
@@ -1067,153 +1067,34 @@ body{
 
 <section id="work" class="wrap rv">
     <h2 class="label" data-i18n="n001">Work</h2>
+  <p class="work-intro" data-i18n="wk1">Six projects, in the order I would read them. Open a card for the full story.</p>
+  <details class="work-key"><summary data-i18n="wk2">What the labels mean</summary><ul><li><b class="pc-badge" data-i18n="bd1">Live product</b> <span data-i18n="lg1">Online now. Anyone can open it.</span></li><li><b class="pc-badge" data-i18n="bd2">Concept prototype</b> <span data-i18n="lg2">A working prototype. Not launched.</span></li><li><b class="pc-badge" data-i18n="bd3">Research project</b> <span data-i18n="lg3">Fieldwork and a costed plan. Nothing built yet.</span></li><li><b class="pc-badge" data-i18n="bd4">Brand partner</b> <span data-i18n="lg4">Set by a real company, through my degree.</span></li><li><b class="pc-badge" data-i18n="bd5">Team project</b> <span data-i18n="lg5">Done in a group. My part is stated.</span></li><li><b class="pc-badge" data-i18n="bd6">Concept demo</b> <span data-i18n="lg6">Practice work. No real client.</span></li></ul></details>
 
-  <article class="case">
+  <article class="case" id="p-calm" data-p="calm" data-motif="3">
     <details class="case-more">
       <summary>
         <span class="case-head">
-          <span class="case-num" data-i18n="mzm"><b>01</b> <span>Concept &amp; prototype</span> <span>2026</span> <span>Team project</span></span>
-        <span class="lead-shot" aria-hidden="true">
-          <img src="assets/milezero-lead.jpg" alt="" loading="lazy" decoding="async" width="560" height="1213">
-        </span>
-          <h3 class="case-name" data-i18n="mzn">MileZero</h3>
-          <span class="case-rf" data-i18n="mzr"><span class="rf-from">Accept first, work out the money later</span> <span class="rf-arrow">&rarr;</span> <span class="rf-to">Know what the ride pays before you tap</span></span>
-        </span>
-        <span class="sign" aria-hidden="true"></span>
-      </summary>
-
-      <div class="panel">
-        <dl class="facts">
-            <div><dt data-i18n="mze1d">Role</dt><dd data-i18n="mze1v">Prototype, brand identity and feasibility, inside a team</dd></div>
-            <div><dt data-i18n="mze2d">Evidence</dt><dd data-i18n="mze2v">50 interviews by the team, then a test with offer screenshots on a real Android phone</dd></div>
-            <div><dt data-i18n="mze3d">Made</dt><dd data-i18n="mze3v">A clickable simulation, a working Android app, an iPhone build, a landing page, and the full visual identity</dd></div>
-            <div><dt data-i18n="mze4d">Status</dt><dd data-i18n="mze4v">Working prototype. Next: a pilot with drivers.</dd></div>
-        </dl>
-
-        <div class="case-media">
-          <figure>
-            <img src="assets/milezero-screens.jpg" alt="Three phone screens of the MileZero app: the start screen with one box for the least the driver wants to earn per minute, a red BAD RIDE banner over a ride offer, and a green info card showing 1,54 euro per minute." loading="lazy" decoding="async" width="1488" height="1048">
-            <figcaption class="case-cap" data-i18n="mzcap">Start screen, red banner on a bad offer, info card on a good one. The offers are examples.</figcaption>
-          </figure>
-        </div>
-
-        <p class="panel-lead" data-i18n="mzl">Drivers in Amsterdam get about ten seconds to accept or decline a ride, and the screen rarely shows what it is worth. By their own account, acceptance-rate pressure pushes them to accept anyway. MileZero gives them the number to decide with.</p>
-        <p data-i18n="mzu"><strong>One colour, set by the driver&rsquo;s own limit.</strong> MileZero reads the offer on the phone and divides the fare by the total time, pickup plus trip. Below the driver&rsquo;s limit per minute, the top of the screen turns red; otherwise green. Nothing is stored and the app has no internet access.</p>
-        <p data-i18n="mzx"><strong>Only numbers from the offer.</strong> MileZero does not guess commission or costs, so every figure on screen can be checked against the offer, and the limit belongs to the driver. That last idea came from a teammate and shaped the final design.</p>
-
-        <div class="case-links" style="display:flex;flex-wrap:wrap;gap:12px 28px">
-          <a class="case-link" href="https://antoniotakor-tech.github.io/milezero-site/" rel="noopener noreferrer">
-            <span data-i18n="mzk3">Visit the website</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><path d="M7 17 17 7M17 7H9m8 0v8"/></svg>
-          </a>
-          <a class="case-link" href="https://claude.ai/artifact/5N7MGqqcrjW25ABXuEVKrt" rel="noopener noreferrer">
-            <span data-i18n="mzk1">Open the simulation</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><path d="M7 17 17 7M17 7H9m8 0v8"/></svg>
-          </a>
-          <a class="case-link" href="https://milezero-e4k.pages.dev" rel="noopener noreferrer">
-            <span data-i18n="mzk2">Try the web demo</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><path d="M7 17 17 7M17 7H9m8 0v8"/></svg>
-          </a>
-        </div>
-      </div>
-    </details>
-  </article>
-  <article class="case">
-    <details class="case-more">
-      <summary>
-        <span class="case-head">
-          <span class="case-num" data-i18n="rgm"><b>02</b> <span>Research &amp; concept</span> <span>2026</span> <span>Solo &middot; Amsterdam</span></span>
-          <h3 class="case-name" data-i18n="rgn">The Return Gap</h3>
-          <span class="case-rf" data-i18n="rgr"><span class="rf-from">Who is making the mess</span> <span class="rf-arrow">&rarr;</span> <span class="rf-to">Why the search fails</span></span>
-        </span>
-        <span class="sign" aria-hidden="true"></span>
-      </summary>
-
-      <div class="panel">
-        <dl class="facts">
-            <div><dt data-i18n="rge1d">Role</dt><dd data-i18n="rge1v">Solo — research, framing, concept</dd></div>
-            <div><dt data-i18n="rge2d">Evidence</dt><dd data-i18n="rge2v">Eight street interviews, Amsterdam, September 2026 &middot; my own bin counts &middot; seven initiatives benchmarked across two countries</dd></div>
-            <div><dt data-i18n="rge3d">Made</dt><dd data-i18n="rge3v">A collection model and a costed pilot: &euro;20,000 over fifteen months, three buildings, twelve weeks of measured collection</dd></div>
-            <div><dt data-i18n="rge4d">Status</dt><dd data-i18n="rge4v">Costed and ready to pilot</dd></div>
-            <div class="fact-wide"><dt data-i18n="rgevd">Who I spoke to</dt><dd data-i18n="rgev"><b>Eight people in the street over two days</b>, September 2026: Amsterdam Centraal, a canal-side park, along the canals. Asked what they would change about the city, nobody named rubbish first. Eight people gave four different causes and no two agreed. Two, unprompted, asked for somewhere to leave bottles &mdash; and neither knew the city had already tried exactly that.</dd></div>
-        </dl>
-
-        <div class="case-media">
-          <div class="flow">
-            <div class="flow-lane now">
-              <span class="flow-tag" data-i18n="f001">What happens now</span>
-              <div class="flow-row">
-                <b data-i18n="f002">Home</b><i>&rarr;</i>
-                <b data-i18n="f003">Street bin</b><i>&rarr;</i>
-                <b data-i18n="f004">Bag torn open to look</b><i>&rarr;</i>
-                <b data-i18n="f005">Often nothing in it</b>
-              </div>
-              <p class="flow-note" data-i18n="f006">The search is blind, so it has to wreck the bag to find out. That is the mess.</p>
-            </div>
-            <div class="flow-lane fix">
-              <span class="flow-tag" data-i18n="f007">What I proposed</span>
-              <div class="flow-row">
-                <b data-i18n="f008">Home</b><i>&rarr;</i>
-                <b data-i18n="f009">Caught inside the building</b><i>&rarr;</i>
-                <b data-i18n="f010">Returned for the deposit</b><i>&rarr;</i>
-                <b data-i18n="f011">Deposit redeemed</b>
-              </div>
-              <p class="flow-note" data-i18n="f012">Catch it at the front door and there is nothing left in a bag worth opening.</p>
-            </div>
-          </div>
-        </div>
-
-        <p class="panel-lead" data-i18n="rgl">People tear open bins in Amsterdam for deposit containers, and the city started removing bins. But the city&rsquo;s own data puts household waste on the street in a bag for ninety minutes on collection morning, and cardboard out in daylight all afternoon. Most of what you step over was never in a bin.</p>
-        <h4 data-i18n="rgkh2">How I stress-tested it</h4>
-        <p data-i18n="rgk1"><b>I tested my first idea on the ground.</b> A 45-minute interview with a resident of seventeen years pointed me to rings the city had fitted to some bins for leaving bottles on top. I counted them myself, found them unused, and moved to a stronger intervention.</p>
-        <p data-i18n="rgk2"><b>I went to the primary sources, in Dutch.</b> The deposit is &euro;0.15 on cans and small bottles, not the &euro;0.25 I had been using. The city had already designed and measured a modified bin: its door stayed shut on 83% of trial bins against 38% of standard ones. And removing bins is deliberate policy, not neglect. The proposal is built on these checked figures.</p>
-
-        <div class="proc">
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>1</b></div>
-            <p class="proc-ph" data-i18n="rgp1">Discover</p>
-            <p data-i18n="rgt1">Two days of interviews in the street.</p>
-          </div>
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>2</b></div>
-            <p class="proc-ph" data-i18n="rgp2">Define</p>
-            <p data-i18n="rgt2">Nobody raised it on their own. Everyone blamed a different group.</p>
-          </div>
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>3</b></div>
-            <p class="proc-ph" data-i18n="rgp3">Develop</p>
-            <p data-i18n="rgt3">All seven initiatives I benchmarked work on the public bin: rings, racks residents fitted themselves, a yellow deposit box, a self-closing lid, removing bins, tear-proof bags, locks. Nobody works on the bag on the pavement.</p>
-          </div>
-          <div class="proc-step">
-            <div class="proc-dia" aria-hidden="true"><b>4</b></div>
-            <p class="proc-ph" data-i18n="rgp4">Deliver</p>
-            <p data-i18n="rgt4">Catch the containers inside the building instead. One building, three months.</p>
-          </div>
-        </div>
-      </div>
-    </details>
-  </article>
-  <article class="case">
-    <details class="case-more">
-      <summary>
-        <span class="case-head">
-          <span class="case-num" data-i18n="cnm"><b>03</b> <span>Solo</span> <span>2026, live</span></b> <span>Solo &mdash; thought up, designed, built, put online</span> <span>2026, live</span></span>
+          <span class="pc-top"><b class="pc-n">01</b><span class="pc-badge" data-i18n="bd1">Live product</span><span class="pc-meta"><span data-i18n="wy26">2026</span><span data-i18n="wsolo">Solo</span></span></span>
           <h3 class="case-name" data-i18n="cnn">Calm Navigation Companion</h3>
-          <span class="case-rf" data-i18n="cnr"><span class="rf-from">Get me there fastest</span> <span class="rf-arrow">&rarr;</span> <span class="rf-to">Get me there without wrecking me</span></span>
+          <span class="pc-role"><b data-i18n="wrole">My role</b> <span data-i18n="wr1">Solo: I thought it up, designed it, built it and put it online.</span></span>
+          <span class="pc-out" data-i18n="wo1">A navigation web app that picks calmer routes instead of the fastest one. It is live and anyone can open it.</span>
         </span>
-        <span class="sign" aria-hidden="true"></span>
+        <span class="pc-cta"><span class="pc-open" data-i18n="wcta1">Read the case study</span><span class="pc-close" data-i18n="wcta2">Close</span><span class="sign" aria-hidden="true"></span></span>
       </summary>
-
       <div class="panel">
-        <dl class="facts">
-            <div><dt data-i18n="cne1d">Role</dt><dd data-i18n="cne1v">Solo — start to finish</dd></div>
-            <div><dt data-i18n="cne2d">Evidence</dt><dd data-i18n="cne2v">A 15-stage design process, then a full read-through of my own code</dd></div>
-            <div><dt data-i18n="cne3d">Made</dt><dd data-i18n="cne3v">A live, installable web app</dd></div>
-            <div><dt data-i18n="cne4d">Status</dt><dd data-i18n="cne4v">Public. Anyone can open it right now</dd></div>
-            <div class="fact-wide"><dt data-i18n="cnevd">Where it started</dt><dd data-i18n="cnev"><b>A problem I live with.</b> I walk the city every day, so I know where it overloads the senses. That is the brief, and every routing choice traces back to it.</dd></div>
-        </dl>
-
-        <div class="case-media">
+        <div class="st"><h4 data-i18n="sh1">The situation</h4>
+          <p data-i18n="cnl">The mapping apps I use optimise for time. If crowds and noise drain you, the fastest route costs you the most. So I built a calmer one.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh2">Problem and insight</h4>
+          <p data-i18n="cnev"><b>A problem I live with.</b> I walk the city every day, so I know where it overloads the senses. That is the brief, and every routing choice traces back to it.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh3">What I did personally</h4>
+          <p data-i18n="cne1v">Solo — start to finish</p>
+          <ul class="buildlog"><li data-i18n="cnb1"><b>Observed</b> where walking the city overloads my senses, then compared that with how routing engines weight road class.</li><li data-i18n="cnb2"><b>Validated</b> through a 15-stage design process. Every feature, from audio ducking to haptic ripples, answers a specific sensory trigger.</li><li data-i18n="cnb3"><b>Built</b> in plain HTML, CSS and JavaScript: about 15,000 lines, no framework, so I can maintain it for years.</li><li data-i18n="cnb4"><b>Shipped</b> as an installable web app. The routing key stays on the server.</li></ul>
+        </div>
+        <div class="st"><h4 data-i18n="sh4">What I made or tested</h4>
+          <p data-i18n="cne3v">A live, installable web app</p>
+          <div class="case-media">
           <figure>
             <img src="assets/calm-nav-screenshot-new.png" alt="The Calm Navigation Companion app on a phone, showing a calm route." loading="lazy" decoding="async" width="560" height="1214">
             <figcaption class="case-cap" data-i18n="cncap">The live app, today.</figcaption>
@@ -1239,44 +1120,172 @@ body{
             </div>
           </div>
         </div>
-
-        <p class="panel-lead" data-i18n="cnl">The mapping apps I use optimise for time. If crowds and noise drain you, the fastest route costs you the most. So I built a calmer one.</p>
-        <p data-i18n="cnu">Then I read my own code back and found what a mockup would never have shown me.</p>
-
-        <ul class="buildlog">
-          <li data-i18n="cnb1"><b>Observed</b> where walking the city overloads my senses, then compared that with how routing engines weight road class.</li>
-          <li data-i18n="cnb2"><b>Validated</b> through a 15-stage design process. Every feature, from audio ducking to haptic ripples, answers a specific sensory trigger.</li>
-          <li data-i18n="cnb3"><b>Built</b> in plain HTML, CSS and JavaScript: about 15,000 lines, no framework, so I can maintain it for years.</li>
-          <li data-i18n="cnb4"><b>Shipped</b> as an installable web app. The routing key stays on the server.</li>
-        </ul>
-          <a class="case-link" href="https://calm-navigation-companion.pages.dev" rel="noopener noreferrer">
-            <span data-i18n="n008">Open the live app</span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><path d="M7 17 17 7M17 7H9m8 0v8"/></svg>
-          </a>
+        </div>
+        <div class="st"><h4 data-i18n="sh5">Evidence and outcome</h4>
+          <p data-i18n="cne2v">A 15-stage design process, then a full read-through of my own code</p>
+          <p data-i18n="cnu">Then I read my own code back and found what a mockup would never have shown me.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh6">Links and material</h4>
+          <div class="case-links"><a class="case-link" href="https://calm-navigation-companion.pages.dev" rel="noopener noreferrer"><span data-i18n="n008">Open the live app</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><path d="M7 17 17 7M17 7H9m8 0v8"/></svg></a></div>
+        </div>
       </div>
     </details>
   </article>
-  <article class="case">
+
+  <article class="case" id="p-milezero" data-p="milezero" data-motif="1">
     <details class="case-more">
       <summary>
         <span class="case-head">
-          <span class="case-num" data-i18n="plm"><b>04</b> <span>Product manager</span> <span>2025&ndash;26</span> <span>Brand partner, via my degree</span></span>
-          <h3 class="case-name" data-i18n="pln">Purylock</h3>
-          <span class="case-rf" data-i18n="plr"><span class="rf-from">Keep people dry in the rain</span> <span class="rf-arrow">&rarr;</span> <span class="rf-to">Get people dry after it</span></span>
+          <span class="pc-top"><b class="pc-n">02</b><span class="pc-badge" data-i18n="bd2">Concept prototype</span><span class="pc-meta"><span data-i18n="wy26">2026</span><span data-i18n="wteam">Team project</span></span></span>
+          <h3 class="case-name" data-i18n="mzn">MileZero</h3>
+          <span class="pc-role"><b data-i18n="wrole">My role</b> <span data-i18n="wr2">Prototype, brand identity and feasibility, inside a team.</span></span>
+          <span class="pc-out" data-i18n="wo2">A prototype that shows a driver one colour, red or green, telling them whether a ride pays enough before they accept.</span>
         </span>
-        <span class="sign" aria-hidden="true"></span>
+        <span class="pc-cta"><span class="pc-open" data-i18n="wcta1">Read the case study</span><span class="pc-close" data-i18n="wcta2">Close</span><span class="sign" aria-hidden="true"></span></span>
       </summary>
-
       <div class="panel">
-        <dl class="facts">
-            <div><dt data-i18n="ple1d">Role</dt><dd data-i18n="ple1v">Product manager, in a team</dd></div>
-            <div><dt data-i18n="ple2d">Evidence</dt><dd data-i18n="ple2v">Interviews with commuters, then the concept shown to around five classmates and cycling friends</dd></div>
-            <div><dt data-i18n="ple3d">Made</dt><dd data-i18n="ple3v">A defined concept with costed business-model options</dd></div>
-            <div><dt data-i18n="ple4d">Status</dt><dd data-i18n="ple4v">Pitched at the end of the project</dd></div>
-            <div class="fact-wide"><dt data-i18n="plevd">Who I spoke to</dt><dd data-i18n="plev"><b>Commuters at Amsterdam Centraal</b>, then the OBA library when the station sample started repeating itself. Storyboard-tested afterwards with about five classmates and commuting friends. They did not talk about getting wet. They described the four hours after arriving: a jacket that never dries, shoes still wet at lunch, and nowhere to put any of it.</dd></div>
-        </dl>
+        <div class="st"><h4 data-i18n="sh1">The situation</h4>
+          <p data-i18n="wz1">Drivers in Amsterdam get about ten seconds to accept or decline a ride, and the screen rarely shows what it is worth.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh2">Problem and insight</h4>
+          <p data-i18n="wz2">By their own account, acceptance-rate pressure pushes them to accept anyway. MileZero gives them the number to decide with.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh3">What I did personally</h4>
+          <p data-i18n="mze1v">Prototype, brand identity and feasibility, inside a team</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh4">What I made or tested</h4>
+          <p data-i18n="mze3v">A clickable simulation, a working Android app, an iPhone build, a landing page, and the full visual identity</p>
+          <div class="case-media">
+          <figure>
+            <img src="assets/milezero-screens.jpg" alt="Three phone screens of the MileZero app: the start screen with one box for the least the driver wants to earn per minute, a red BAD RIDE banner over a ride offer, and a green info card showing 1,54 euro per minute." loading="lazy" decoding="async" width="1488" height="1048">
+            <figcaption class="case-cap" data-i18n="mzcap">Start screen, red banner on a bad offer, info card on a good one. The offers are examples.</figcaption>
+          </figure>
+        </div>
+          <p data-i18n="mzu"><strong>One colour, set by the driver&rsquo;s own limit.</strong> MileZero reads the offer on the phone and divides the fare by the total time, pickup plus trip. Below the driver&rsquo;s limit per minute, the top of the screen turns red; otherwise green. Nothing is stored and the app has no internet access.</p>
+          <p data-i18n="mzx"><strong>Only numbers from the offer.</strong> MileZero does not guess commission or costs, so every figure on screen can be checked against the offer, and the limit belongs to the driver. That last idea came from a teammate and shaped the final design.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh5">Evidence and outcome</h4>
+          <p data-i18n="mze2v">50 interviews by the team, then a test with offer screenshots on a real Android phone</p>
+          <p data-i18n="mze4v">Working prototype. Next: a pilot with drivers.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh6">Links and material</h4>
+          <div class="case-links"><a class="case-link" href="https://antoniotakor-tech.github.io/milezero-site/" rel="noopener noreferrer"><span data-i18n="mzk3">Visit the website</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><path d="M7 17 17 7M17 7H9m8 0v8"/></svg></a><a class="case-link" href="https://claude.ai/artifact/5N7MGqqcrjW25ABXuEVKrt" rel="noopener noreferrer"><span data-i18n="mzk1">Open the simulation</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><path d="M7 17 17 7M17 7H9m8 0v8"/></svg></a><a class="case-link" href="https://milezero-e4k.pages.dev" rel="noopener noreferrer"><span data-i18n="mzk2">Try the web demo</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><path d="M7 17 17 7M17 7H9m8 0v8"/></svg></a></div>
+        </div>
+      </div>
+    </details>
+  </article>
 
-        <div class="case-media">
+  <article class="case" id="p-returngap" data-p="returngap" data-motif="2">
+    <details class="case-more">
+      <summary>
+        <span class="case-head">
+          <span class="pc-top"><b class="pc-n">03</b><span class="pc-badge" data-i18n="bd3">Research project</span><span class="pc-meta"><span data-i18n="wy26">2026</span><span data-i18n="wsoloams">Solo · Amsterdam</span></span></span>
+          <h3 class="case-name" data-i18n="rgn">The Return Gap</h3>
+          <span class="pc-role"><b data-i18n="wrole">My role</b> <span data-i18n="wr3">Solo: research, framing and concept.</span></span>
+          <span class="pc-out" data-i18n="wo3">A costed pilot plan to catch deposit containers inside buildings instead of in street bins: &euro;20,000, three buildings, fifteen months.</span>
+        </span>
+        <span class="pc-cta"><span class="pc-open" data-i18n="wcta1">Read the case study</span><span class="pc-close" data-i18n="wcta2">Close</span><span class="sign" aria-hidden="true"></span></span>
+      </summary>
+      <div class="panel">
+        <div class="st"><h4 data-i18n="sh1">The situation</h4>
+          <p data-i18n="wg1">People tear open bins in Amsterdam for deposit containers, and the city started removing bins.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh2">Problem and insight</h4>
+          <p data-i18n="wg2">But the city&rsquo;s own data puts household waste on the street in a bag for ninety minutes on collection morning, and cardboard out in daylight all afternoon. Most of what you step over was never in a bin.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh3">What I did personally</h4>
+          <p data-i18n="rge1v">Solo — research, framing, concept</p>
+          <p data-i18n="rgk1"><b>I tested my first idea on the ground.</b> A 45-minute interview with a resident of seventeen years pointed me to rings the city had fitted to some bins for leaving bottles on top. I counted them myself, found them unused, and moved to a stronger intervention.</p>
+          <p data-i18n="rgk2"><b>I went to the primary sources, in Dutch.</b> The deposit is &euro;0.15 on cans and small bottles, not the &euro;0.25 I had been using. The city had already designed and measured a modified bin: its door stayed shut on 83% of trial bins against 38% of standard ones. And removing bins is deliberate policy, not neglect. The proposal is built on these checked figures.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh4">What I made or tested</h4>
+          <p data-i18n="rge3v">A collection model and a costed pilot: &euro;20,000 over fifteen months, three buildings, twelve weeks of measured collection</p>
+          <div class="case-media">
+          <div class="flow">
+            <div class="flow-lane now">
+              <span class="flow-tag" data-i18n="f001">What happens now</span>
+              <div class="flow-row">
+                <b data-i18n="f002">Home</b><i>&rarr;</i>
+                <b data-i18n="f003">Street bin</b><i>&rarr;</i>
+                <b data-i18n="f004">Bag torn open to look</b><i>&rarr;</i>
+                <b data-i18n="f005">Often nothing in it</b>
+              </div>
+              <p class="flow-note" data-i18n="f006">The search is blind, so it has to wreck the bag to find out. That is the mess.</p>
+            </div>
+            <div class="flow-lane fix">
+              <span class="flow-tag" data-i18n="f007">What I proposed</span>
+              <div class="flow-row">
+                <b data-i18n="f008">Home</b><i>&rarr;</i>
+                <b data-i18n="f009">Caught inside the building</b><i>&rarr;</i>
+                <b data-i18n="f010">Returned for the deposit</b><i>&rarr;</i>
+                <b data-i18n="f011">Deposit redeemed</b>
+              </div>
+              <p class="flow-note" data-i18n="f012">Catch it at the front door and there is nothing left in a bag worth opening.</p>
+            </div>
+          </div>
+        </div>
+          <div class="proc">
+          <div class="proc-step">
+            <div class="proc-dia" aria-hidden="true"><b>1</b></div>
+            <p class="proc-ph" data-i18n="rgp1">Discover</p>
+            <p data-i18n="rgt1">Two days of interviews in the street.</p>
+          </div>
+          <div class="proc-step">
+            <div class="proc-dia" aria-hidden="true"><b>2</b></div>
+            <p class="proc-ph" data-i18n="rgp2">Define</p>
+            <p data-i18n="rgt2">Nobody raised it on their own. Everyone blamed a different group.</p>
+          </div>
+          <div class="proc-step">
+            <div class="proc-dia" aria-hidden="true"><b>3</b></div>
+            <p class="proc-ph" data-i18n="rgp3">Develop</p>
+            <p data-i18n="rgt3">All seven initiatives I benchmarked work on the public bin: rings, racks residents fitted themselves, a yellow deposit box, a self-closing lid, removing bins, tear-proof bags, locks. Nobody works on the bag on the pavement.</p>
+          </div>
+          <div class="proc-step">
+            <div class="proc-dia" aria-hidden="true"><b>4</b></div>
+            <p class="proc-ph" data-i18n="rgp4">Deliver</p>
+            <p data-i18n="rgt4">Catch the containers inside the building instead. One building, three months.</p>
+          </div>
+        </div>
+        </div>
+        <div class="st"><h4 data-i18n="sh5">Evidence and outcome</h4>
+          <p data-i18n="rge2v">Eight street interviews, Amsterdam, September 2026 &middot; my own bin counts &middot; seven initiatives benchmarked across two countries</p>
+          <p data-i18n="rgev"><b>Eight people in the street over two days</b>, September 2026: Amsterdam Centraal, a canal-side park, along the canals. Asked what they would change about the city, nobody named rubbish first. Eight people gave four different causes and no two agreed. Two, unprompted, asked for somewhere to leave bottles &mdash; and neither knew the city had already tried exactly that.</p>
+          <p data-i18n="rge4v">Costed and ready to pilot</p>
+        </div>
+      </div>
+    </details>
+  </article>
+
+  <article class="case" id="p-purylock" data-p="purylock" data-motif="4">
+    <details class="case-more">
+      <summary>
+        <span class="case-head">
+          <span class="pc-top"><b class="pc-n">04</b><span class="pc-badge" data-i18n="bd4">Brand partner</span><span class="pc-meta"><span data-i18n="wy2526">2025&ndash;26</span><span data-i18n="wdeg">Team, via my degree</span></span></span>
+          <h3 class="case-name" data-i18n="pln">Purylock</h3>
+          <span class="pc-role"><b data-i18n="wrole">My role</b> <span data-i18n="wr4">Product manager, in a team.</span></span>
+          <span class="pc-out" data-i18n="wo4">A shared drying locker for building lobbies, built on interviews with commuters and pitched at the end of the project.</span>
+        </span>
+        <span class="pc-cta"><span class="pc-open" data-i18n="wcta1">Read the case study</span><span class="pc-close" data-i18n="wcta2">Close</span><span class="sign" aria-hidden="true"></span></span>
+      </summary>
+      <div class="panel">
+        <div class="st"><h4 data-i18n="sh1">The situation</h4>
+          <p data-i18n="pll">A Dutch weather-gear brand gave an open brief: no product category, no spec. I had to back the direction with evidence, not taste.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh2">Problem and insight</h4>
+          <p data-i18n="plu">All of the pain sat on one moment: arrival.</p>
+          <blockquote class="insight">
+          <p data-i18n="plq">&ldquo;It&rsquo;s not the rain. It&rsquo;s sitting in a wet jacket until half two.&rdquo;</p>
+          <cite data-i18n="plqc">A commuter at Amsterdam Centraal, on the second day of interviews</cite>
+        </blockquote>
+          <p data-i18n="plq2">That sentence moved the project. The brand existed to stop people getting wet; nobody worked on the four hours afterwards, where the day actually gets ruined. One shared drying unit in a lobby serves the whole building whenever it rains.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh3">What I did personally</h4>
+          <p data-i18n="ple1v">Product manager, in a team</p>
+          <p data-i18n="plev"><b>Commuters at Amsterdam Centraal</b>, then the OBA library when the station sample started repeating itself. Storyboard-tested afterwards with about five classmates and commuting friends. They did not talk about getting wet. They described the four hours after arriving: a jacket that never dries, shoes still wet at lunch, and nowhere to put any of it.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh4">What I made or tested</h4>
+          <p data-i18n="plphys">Purylock is a modular dry-locker for lobbies. Put in a wet jacket, gloves, scarf, shoes or an umbrella and scan a code; warm air dries and sanitises them, with an optional fragrance, while you get on with your day. One unit serves a whole building: schools, universities, workplaces, stations.</p>
+          <div class="case-media">
           <div class="flow">
             <div class="flow-lane now">
               <span class="flow-tag" data-i18n="plf9">Where the brief was aimed</span>
@@ -1300,43 +1309,42 @@ body{
             </div>
           </div>
         </div>
-
-        <p class="panel-lead" data-i18n="pll">A Dutch weather-gear brand gave an open brief: no product category, no spec. I had to back the direction with evidence, not taste.</p>
-        <p data-i18n="plphys">Purylock is a modular dry-locker for lobbies. Put in a wet jacket, gloves, scarf, shoes or an umbrella and scan a code; warm air dries and sanitises them, with an optional fragrance, while you get on with your day. One unit serves a whole building: schools, universities, workplaces, stations.</p>
-        <p data-i18n="plu">All of the pain sat on one moment: arrival.</p>
-
-        <blockquote class="insight">
-          <p data-i18n="plq">&ldquo;It&rsquo;s not the rain. It&rsquo;s sitting in a wet jacket until half two.&rdquo;</p>
-          <cite data-i18n="plqc">A commuter at Amsterdam Centraal, on the second day of interviews</cite>
-        </blockquote>
-        <p data-i18n="plq2">That sentence moved the project. The brand existed to stop people getting wet; nobody worked on the four hours afterwards, where the day actually gets ruined. One shared drying unit in a lobby serves the whole building whenever it rains.</p>
-
-        <p class="panel-close" data-i18n="plc">The strongest signal came from strangers at the station, in their own words.</p>
+          <p data-i18n="ple3v">A defined concept with costed business-model options</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh5">Evidence and outcome</h4>
+          <p data-i18n="ple2v">Interviews with commuters, then the concept shown to around five classmates and cycling friends</p>
+          <p data-i18n="ple4v">Pitched at the end of the project</p>
+          <p data-i18n="plc">The strongest signal came from strangers at the station, in their own words.</p>
+        </div>
       </div>
     </details>
   </article>
 
-  <article class="case">
+  <article class="case" id="p-grandpod" data-p="grandpod" data-motif="5">
     <details class="case-more">
       <summary>
         <span class="case-head">
-          <span class="case-num" data-i18n="gpm"><b>05</b> <span>Concept &amp; validation</span> <span>2025&ndash;26</span> <span>Team of six</span></span>
+          <span class="pc-top"><b class="pc-n">05</b><span class="pc-badge" data-i18n="bd5">Team project</span><span class="pc-meta"><span data-i18n="wy2526">2025&ndash;26</span><span data-i18n="wsix">Team of six</span></span></span>
           <h3 class="case-name" data-i18n="gpn">GrandPod</h3>
-          <span class="case-rf" data-i18n="gpr"><span class="rf-from">An app for lonely older people</span> <span class="rf-arrow">&rarr;</span> <span class="rf-to">A human on the other end</span></span>
+          <span class="pc-role"><b data-i18n="wrole">My role</b> <span data-i18n="wr5">Concept and validation, in a team of six.</span></span>
+          <span class="pc-out" data-i18n="wo5">A voice-first device with a real person on the line, tested as a filmed simulation and shown to older people.</span>
         </span>
-        <span class="sign" aria-hidden="true"></span>
+        <span class="pc-cta"><span class="pc-open" data-i18n="wcta1">Read the case study</span><span class="pc-close" data-i18n="wcta2">Close</span><span class="sign" aria-hidden="true"></span></span>
       </summary>
-
       <div class="panel">
-        <dl class="facts">
-            <div><dt data-i18n="gpe1d">Role</dt><dd data-i18n="gpe1v">Concept and validation, in a team of six</dd></div>
-            <div><dt data-i18n="gpe2d">Evidence</dt><dd data-i18n="gpe2v">26 ideas narrowed to one, then a filmed concept test shown to older people</dd></div>
-            <div><dt data-i18n="gpe3d">Made</dt><dd data-i18n="gpe3v">A filmed concept simulation, a physical build of the device, and concept renders</dd></div>
-            <div><dt data-i18n="gpe4d">Status</dt><dd data-i18n="gpe4v">Course project, concept tested with older people</dd></div>
-            <div class="fact-wide"><dt data-i18n="gpevd">Who I spoke to</dt><dd data-i18n="gpev"><b>I generated 26 ideas</b> and put the shortlist to about twenty family members and classmates, without defending it. The group had role-played a fraud scenario to understand it from the inside; I played the scammer. The concept was tested as a filmed simulation and shown to older people for feedback.</dd></div>
-        </dl>
-
-        <div class="case-media">
+        <div class="st"><h4 data-i18n="sh1">The situation</h4>
+          <p data-i18n="gpl">People over 75 who want to stay independent at home. They may no longer manage cooking or bathing, but they do not want a nursing home, so they stay somewhere that cannot properly support them. Loneliness follows. The team&rsquo;s first instinct was an app.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh2">Problem and insight</h4>
+          <p data-i18n="gpu"><strong>Voice first. A real person on the line, the machine behind it.</strong> Our first target, anyone over 65, was too broad to design for, so we narrowed it to one person in one specific bind. For people shut out of apps, an app is the barrier. AI stays out of the front for the same reason: a synthetic voice asking a fraud-wary 80-year-old to trust it starts out losing.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh3">What I did personally</h4>
+          <p data-i18n="gpe1v">Concept and validation, in a team of six</p>
+          <p data-i18n="gpev"><b>I generated 26 ideas</b> and put the shortlist to about twenty family members and classmates, without defending it. The group had role-played a fraud scenario to understand it from the inside; I played the scammer. The concept was tested as a filmed simulation and shown to older people for feedback.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh4">What I made or tested</h4>
+          <p data-i18n="gpe3v">A filmed concept simulation, a physical build of the device, and concept renders</p>
+          <div class="case-media">
           <figure>
             <img src="assets/grandpod-prototype.jpg" alt="A physical build of the device: a blue box with a dot-matrix display and three plain actions." loading="lazy" decoding="async" width="1120" height="728">
             <figcaption class="case-cap" data-i18n="gpcap1">A physical build of the device.</figcaption>
@@ -1346,11 +1354,48 @@ body{
             <figcaption class="case-cap" data-i18n="gpcap2">Concept renders of the device in four colourways.</figcaption>
           </figure>
         </div>
+          <p data-i18n="gpx">We tested before building anything. Two actors sat either side of a divider, one the older user, one the helper, to show the value is the human behind the technology. A phone menu stood in for the AI routing. A tissue box stood in for the device, so it felt like a household object, not a medical one.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh5">Evidence and outcome</h4>
+          <p data-i18n="gpe2v">26 ideas narrowed to one, then a filmed concept test shown to older people</p>
+          <p data-i18n="gpe4v">Course project, concept tested with older people</p>
+        </div>
+      </div>
+    </details>
+  </article>
 
-        <p class="panel-lead" data-i18n="gpl">People over 75 who want to stay independent at home. They may no longer manage cooking or bathing, but they do not want a nursing home, so they stay somewhere that cannot properly support them. Loneliness follows. The team&rsquo;s first instinct was an app.</p>
-        <p data-i18n="gpu"><strong>Voice first. A real person on the line, the machine behind it.</strong> Our first target, anyone over 65, was too broad to design for, so we narrowed it to one person in one specific bind. For people shut out of apps, an app is the barrier. AI stays out of the front for the same reason: a synthetic voice asking a fraud-wary 80-year-old to trust it starts out losing.</p>
-
-        <p data-i18n="gpx">We tested before building anything. Two actors sat either side of a divider, one the older user, one the helper, to show the value is the human behind the technology. A phone menu stood in for the AI routing. A tissue box stood in for the device, so it felt like a household object, not a medical one.</p>
+  <article class="case" id="p-spaakwerk" data-p="spaakwerk" data-motif="0">
+    <details class="case-more">
+      <summary>
+        <span class="case-head">
+          <span class="pc-top"><b class="pc-n">06</b><span class="pc-badge" data-i18n="bd6">Concept demo</span><span class="pc-meta"><span data-i18n="wy26">2026</span><span data-i18n="wsolo">Solo</span></span></span>
+          <h3 class="case-name">Spaakwerk Fietsenmakers</h3>
+          <span class="pc-role"><b data-i18n="wrole">My role</b> <span data-i18n="wr6">Solo: planning, design and build of a one-page site.</span></span>
+          <span class="pc-out" data-i18n="wo6">Concept demo, not a real client: a mobile-first site for a fictional Amsterdam bike-repair shop, with prices, opening hours and a WhatsApp booking flow.</span>
+        </span>
+        <span class="pc-cta"><span class="pc-open" data-i18n="wcta1">Read the case study</span><span class="pc-close" data-i18n="wcta2">Close</span><span class="sign" aria-hidden="true"></span></span>
+      </summary>
+      <div class="panel">
+        <div class="st"><h4 data-i18n="sh1">The situation</h4>
+          <p class="demo-flag" data-i18n="skhd">Concept demo &mdash; local-business website</p>
+          <p data-i18n="sk1">A small local business needs a website that works on a phone and makes it easy to get in touch. This is a practice project for a made-up bike-repair shop in Amsterdam. It is not a real client.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh2">Problem and insight</h4>
+          <p data-i18n="sk2">A repair customer needs clear service information, such as prices and opening hours, and an easy way to ask or book from a phone.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh3">What I did personally</h4>
+          <p data-i18n="sk3">Solo: planning, design and build.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh4">What I made or tested</h4>
+          <p data-i18n="sk4">A mobile-first one-page website for the fictional shop Spaakwerk Fietsenmakers, with prices, opening hours and a WhatsApp booking flow.</p>
+          <div class="case-media"><figure><img src="assets/spaakwerk.jpg" alt="Spaakwerk bike repair website: a corner shop front, the headline &ldquo;Bike broken? Usually fixed the same day&rdquo; and a WhatsApp booking button." loading="lazy" decoding="async" width="640" height="400"><figcaption class="case-cap" data-i18n="skcap">The first screen of the concept site. The shop is fictional.</figcaption></figure></div>
+        </div>
+        <div class="st"><h4 data-i18n="sh5">Evidence and outcome</h4>
+          <p data-i18n="sk5">It is an open demo you can try on your phone. There is no real shop, no real customers and no results to report. All names and business details on it are invented.</p>
+        </div>
+        <div class="st"><h4 data-i18n="sh6">Links and material</h4>
+          <div class="case-links"><a class="case-link" href="https://antoniotakor-tech.github.io/spaakwerk-demo/" rel="noopener noreferrer"><span data-i18n="sklink">Open the demo site</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><path d="M7 17 17 7M17 7H9m8 0v8"/></svg></a></div>
+        </div>
       </div>
     </details>
   </article>
@@ -1776,13 +1821,24 @@ body{
   dlg.addEventListener('click',function(){ dlg.close(); });
 })();
 
+/* work cards: one open at a time; a link to #p-name opens that card */
+(function(){
+  var ds = Array.prototype.slice.call(document.querySelectorAll('#work .case > details'));
+  ds.forEach(function(d){ d.addEventListener('toggle', function(){
+    if(d.open) ds.forEach(function(o){ if(o !== d) o.open = false; }); }); });
+  function fromHash(){
+    var a = location.hash && document.querySelector('#work .case' + location.hash.replace(/[^#\w-]/g,''));
+    if(a){ a.querySelector('details').open = true; a.scrollIntoView(); } }
+  window.addEventListener('hashchange', fromHash); fromHash();
+})();
+
 /* the background follows the project you are reading */
 (function(){
   var b = document.body, cases = Array.prototype.slice.call(document.querySelectorAll('.case'));
   if(!cases.length || !('IntersectionObserver' in window)) return;
   b.setAttribute('data-case', '1');
   var io = new IntersectionObserver(function(es){ es.forEach(function(e){
-    if(e.isIntersecting) b.setAttribute('data-case', String(cases.indexOf(e.target) + 1)); }); }, { rootMargin:'-40% 0px -40% 0px' });
+    if(e.isIntersecting) b.setAttribute('data-case', e.target.getAttribute('data-motif') || '0'); }); }, { rootMargin:'-40% 0px -40% 0px' });
   cases.forEach(function(c){ io.observe(c); });
   var hero = document.querySelector('.hero');
   var io2 = new IntersectionObserver(function(es){ es.forEach(function(e){
