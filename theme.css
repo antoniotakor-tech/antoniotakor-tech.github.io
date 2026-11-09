@@ -264,3 +264,27 @@ body[data-case="4"] .bgfx .m4,body[data-case="5"] .bgfx .m5{opacity:.45}
 @keyframes bgvoice{0%,100%{transform:scaleY(.25)}50%{transform:scaleY(1)}}
 @media (prefers-reduced-motion:reduce){.bgfx *{animation:none!important}.bgfx .car{display:none}}
 .bgfx .trk{stroke-linecap:butt}
+
+/* Calm Companion's own doodle animations, redrawn as light-blue lines */
+.bgfx .cc-rays{transform-origin:760px 150px;animation:ccspin 24s linear infinite}
+@keyframes ccspin{to{transform:rotate(360deg)}}
+.bgfx .cc-fly{animation:ccdrift var(--dur,40s) linear infinite;animation-delay:var(--d,0s)}
+@keyframes ccdrift{from{transform:translateX(-140px)}to{transform:translateX(1740px)}}
+.bgfx .cc-wl,.bgfx .cc-wr{transform-origin:0 0;animation:ccflap .45s ease-in-out infinite alternate}
+@keyframes ccflap{from{transform:scaleX(1)}to{transform:scaleX(.35)}}
+.bgfx .cc-bird{transform-box:fill-box;transform-origin:center;animation:ccwing 1.1s ease-in-out infinite alternate}
+@keyframes ccwing{from{transform:scaleY(1)}to{transform:scaleY(.45)}}
+.bgfx .cc-bee{animation:ccbee 26s ease-in-out infinite}
+@keyframes ccbee{0%{transform:translate(900px,430px)}20%{transform:translate(1180px,380px)}45%{transform:translate(960px,540px)}70%{transform:translate(1240px,500px)}100%{transform:translate(900px,430px)}}
+.bgfx .cc-balloons{animation:ccballoon 34s linear infinite;animation-delay:-10s}
+@keyframes ccballoon{0%{transform:translate(1460px,1100px)}50%{transform:translate(1420px,520px)}100%{transform:translate(1470px,-160px)}}
+.bgfx .cc-flake{animation:ccflake 14s linear infinite;animation-delay:var(--d)}
+@keyframes ccflake{0%{transform:translate(0,-40px) rotate(0)}50%{transform:translate(18px,500px) rotate(180deg)}100%{transform:translate(-10px,1040px) rotate(360deg)}}
+.bgfx .cc-bolt{opacity:0;animation:ccbolt 9s steps(1) infinite}
+@keyframes ccbolt{0%,61%,66%,100%{opacity:0}62%,64%{opacity:1}}
+
+/* gravity: every motif falls off the bottom of the screen, staggered, then fades back in at home */
+.bgfx.fall .m{transform:translateY(1250px);opacity:0;transition:transform 1.6s cubic-bezier(.55,0,.95,.45),opacity 1.2s ease .5s}
+.bgfx.fall .m2{transition-delay:.12s,.62s}.bgfx.fall .m3{transition-delay:.24s,.74s}
+.bgfx.fall .m4{transition-delay:.08s,.58s}.bgfx.fall .m5{transition-delay:.18s,.68s}
+.bgfx.reset .m{transform:none!important;opacity:0!important;transition:none!important}

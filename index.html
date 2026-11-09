@@ -920,7 +920,7 @@ body{
 @media (max-width:999px){ .hero-face{max-width:250px} }
 </style>
 <link rel="preload" href="assets/fonts/barlow-condensed-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="theme.css?v=10">
+<link rel="stylesheet" href="theme.css?v=12">
 </head>
 <body>
 <svg class="bgfx" aria-hidden="true" focusable="false" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
@@ -936,9 +936,19 @@ body{
     <g transform="translate(188 470)"><g class="bt" style="--d:1.6s"><path d="M0 0 v-14 h9 v14 q9 6 9 18 v36 h-27 v-36 q0 -12 9 -18z"/></g></g>
     <g transform="translate(226 470)"><g class="bt" style="--d:3.2s"><path d="M0 0 v-14 h9 v14 q9 6 9 18 v36 h-27 v-36 q0 -12 9 -18z"/></g></g>
   </g>
-  <g class="m m3"><!-- Calm Companion: breathing and ripples -->
+  <g class="m m3"><!-- Calm Companion: the doodle world (sun, butterfly, birds, bee, balloons, snow, storm) and its breathing -->
     <circle class="br" cx="1330" cy="250" r="22"/>
     <circle class="rp" cx="1330" cy="250" r="30" style="--d:0s"/><circle class="rp" cx="1330" cy="250" r="30" style="--d:2s"/><circle class="rp" cx="1330" cy="250" r="30" style="--d:4s"/>
+    <circle cx="760" cy="150" r="24"/><path class="cc-rays" d="M798.0 150.0 L818.0 150.0 M792.9 169.0 L810.2 179.0 M779.0 182.9 L789.0 200.2 M760.0 188.0 L760.0 208.0 M741.0 182.9 L731.0 200.2 M727.1 169.0 L709.8 179.0 M722.0 150.0 L702.0 150.0 M727.1 131.0 L709.8 121.0 M741.0 117.1 L731.0 99.8 M760.0 112.0 L760.0 92.0 M779.0 117.1 L789.0 99.8 M792.9 131.0 L810.2 121.0"/>
+    <g class="cc-fly" style="--dur:42s;--d:-8s"><g transform="translate(0 215)"><path d="M0 -9 V9"/><ellipse class="cc-wl" cx="-10" cy="-5" rx="10" ry="8"/><ellipse class="cc-wr" cx="10" cy="-5" rx="10" ry="8"/></g></g>
+    <g class="cc-fly" style="--dur:58s;--d:-30s"><g transform="translate(0 110)"><path class="cc-bird" d="M-14 0 q7 -9 14 0 q7 -9 14 0"/></g></g>
+    <g class="cc-fly" style="--dur:50s;--d:-14s"><g transform="translate(0 75)"><path class="cc-bird" d="M-11 0 q5.5 -7 11 0 q5.5 -7 11 0"/></g></g>
+    <g class="cc-bee"><ellipse cx="0" cy="0" rx="11" ry="8"/><path d="M-3 -7 V7 M3 -7 V7"/><ellipse class="cc-wl" cx="-1" cy="-11" rx="7" ry="4"/></g>
+    <g class="cc-balloons"><path d="M-6 28 Q-10 60 0 92 M12 24 Q16 56 4 92"/><ellipse cx="-6" cy="12" rx="11" ry="14"/><ellipse cx="12" cy="8" rx="11" ry="14"/></g>
+    <g transform="translate(560 0)"><g class="cc-flake" style="--d:0s"><path d="M0 -9 V9 M-8 -4.5 L8 4.5 M-8 4.5 L8 -4.5"/></g></g>
+    <g transform="translate(980 0)"><g class="cc-flake" style="--d:-5s"><path d="M0 -9 V9 M-8 -4.5 L8 4.5 M-8 4.5 L8 -4.5"/></g></g>
+    <g transform="translate(1180 0)"><g class="cc-flake" style="--d:-9s"><path d="M0 -9 V9 M-8 -4.5 L8 4.5 M-8 4.5 L8 -4.5"/></g></g>
+    <path class="cc-bolt" d="M1180 320 l-14 28 h12 l-10 30 l26 -38 h-13 l10 -20 z"/>
   </g>
   <g class="m m4"><!-- Purylock: rain on a locker -->
     <rect x="1240" y="640" width="150" height="230"/><path d="M1315 640 v230"/><circle cx="1296" cy="760" r="5"/><circle cx="1334" cy="760" r="5"/>
@@ -1779,6 +1789,21 @@ body{
     if(e.isIntersecting) b.setAttribute('data-case', e.target === hero ? '1' : '0'); }); }, { rootMargin:'-40% 0px -40% 0px' });
   if(hero) io2.observe(hero);
   Array.prototype.forEach.call(document.querySelectorAll('main > section:not(#work)'), function(s){ io2.observe(s); });
+})();
+
+/* click anywhere: the background animations drop to the bottom of the screen, then drift back in */
+(function(){
+  var svg=document.querySelector('.bgfx'); if(!svg) return;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches; if(reduce) return;
+  var busy=false;
+  document.addEventListener('click',function(e){
+    if(busy||e.target.closest('a,button,summary,input,textarea,select,dialog,.zoomable')) return;
+    busy=true; svg.classList.add('fall');
+    setTimeout(function(){
+      svg.classList.add('reset'); svg.classList.remove('fall');
+      setTimeout(function(){ svg.classList.remove('reset'); busy=false; },80);
+    },2000);
+  });
 })();
 </script>
 </body>
