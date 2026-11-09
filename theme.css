@@ -333,3 +333,74 @@ body[data-case="4"] .bgfx .m4,body[data-case="5"] .bgfx .m5{opacity:.45}
 .st .flow{margin-top:0}
 .demo-flag{display:inline-block;font-family:var(--mono);font-size:.74rem!important;letter-spacing:.12em;text-transform:uppercase;color:var(--c)!important;margin-bottom:.6rem!important}
 .case-links{display:flex;flex-wrap:wrap;gap:.8rem 1.6rem}
+
+/* ==========================================================================
+   V3: flat, solid and readable.
+   - no blur, no glass, no tinted fills, no shadows: surfaces are solid tones
+   - one structure for every project: Discover, Define, Develop, Deliver
+   - accessibility: 16px+ text, 4.5:1 contrast, 3px focus ring, 44px targets
+   ========================================================================== */
+:root{
+  --well:#162230;                         /* solid inset surface inside an opened project */
+  --grad-warm:var(--accent); --grad-cool:#2A3B4D;
+  --pink-glass:#2A3B4D; --green-glass:#1E3029; --red-glass:#2A3B4D;
+  --glass:#080C11; --glass-2:#1F2D3B; --blur:none;
+  --shadow:none; --glow:none;
+}
+*,*::before,*::after{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+.case-more,.hero-card,.offer,.kit>div,.avail,.direct-mail,.links a,.btn-fill,.case-link,.dm-copy,
+.bar-nav .cta,.hero-face,.dd-wrap,.colophon{box-shadow:none!important}
+.bar{box-shadow:none;background:#111A24}
+.case-more,.case:first-of-type .case-more{box-shadow:inset 0 5px 0 var(--c)!important;background:var(--card)}
+.case-more:not([open]):hover{transform:none}
+
+/* inside an opened project: every inner block is the same solid well */
+.panel .flow,.panel .flow-lane,.panel .proc-step,.panel .insight,.panel blockquote,.panel .facts>div,
+.panel .buildlog li,.panel .case-media figure,.panel .flow-row b{background:var(--well)!important}
+.panel .flow{padding:1rem}
+.panel .flow-lane{padding:1rem 0 .4rem}
+.panel .flow-lane+.flow-lane{margin-top:.4rem}
+.panel .flow-row b{background:var(--card-2)!important;font-size:.92rem;font-weight:600;color:var(--fg)}
+.panel .flow-lane.now .flow-row b:last-of-type,.panel .flow-lane.fix .flow-row b:last-of-type{background:var(--card-2)!important;box-shadow:inset 0 -3px 0 var(--c)}
+.panel .flow-tag{background:none!important;padding:0;margin-bottom:.7rem;font-size:.8rem;letter-spacing:.1em}
+.panel .flow-lane.now .flow-tag{color:var(--clay)!important}
+.panel .flow-lane.fix .flow-tag{color:var(--sage)!important}
+.panel .flow-note{font-size:.92rem;color:var(--muted)}
+.panel .insight{padding:1.2rem 1.3rem}
+.panel .insight cite{color:var(--muted);opacity:1}
+.panel blockquote{border-left:0}
+.panel .case-cap{font-size:.9rem;color:var(--muted)}
+
+/* the four steps, same in every project */
+#work .panel{counter-reset:none;padding-top:.4rem;padding-bottom:2rem}
+.ph{margin:2.4rem 0 0;max-width:46rem}
+.ph>h4{display:flex;align-items:center;gap:.8rem;margin:0;padding:0;border:0;font-family:var(--display);font-weight:800;text-transform:uppercase;letter-spacing:.02em;font-size:clamp(1.5rem,3.4vw,2rem);line-height:1;color:var(--fg)}
+.ph>h4::before{content:none}
+.ph>h4 b{display:inline-grid;place-items:center;flex:none;width:2.2rem;height:2.2rem;background:var(--c);color:var(--on-accent);border-radius:var(--r-s);font-family:var(--mono);font-weight:500;font-size:1rem;letter-spacing:0}
+.ph-sub{margin:.5rem 0 1rem!important;font-size:.95rem!important;color:var(--muted)!important}
+.ph p,.ph li{font-size:1.02rem;line-height:1.65;color:var(--fg-2)}
+.ph p+p{margin-top:.9rem}
+.ph .case-media,.ph .proc{max-width:none;position:static;margin:1.2rem 0}
+.ph-links{margin-top:2.4rem}
+.ph-links>h4{font-family:var(--mono);font-size:.8rem;letter-spacing:.12em;color:var(--muted);margin:0 0 .8rem}
+.work-intro{max-width:44rem}
+.demo-flag{font-size:.8rem!important}
+
+/* readable small type: nothing below 12.5px, no faded text */
+.label,h2.label,.case-num,.facts dt,.kit dt,.direct .k,.dm-label,.proc-ph,.flow-tag,.field label,
+.status span,.hero-card dt,.dd-phases i,.insight cite,.pc-meta,.pc-badge,.pc-cta,.pc-role b,.work-key>summary{font-size:max(.8rem,12.5px)}
+.pc-meta,.pc-role{color:var(--fg-2)}
+.pc-role b{color:var(--muted)}
+.case-num{opacity:1}
+.pc-out{font-size:clamp(1.05rem,1.7vw,1.2rem)}
+.panel p{font-size:1.02rem}
+.case-link{display:inline-flex;align-items:center;gap:.5rem;min-height:44px;padding:.7rem 1.1rem}
+.btn,.links a,.bar-nav a,.lang-switch button,.menu-btn,.dm-copy{min-height:44px}
+
+/* focus and motion */
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.case-more>summary:focus-visible{outline-offset:-3px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+@media (max-width:560px){.ph>h4{font-size:1.5rem}.ph p,.ph li{font-size:1rem}}
+.ph:first-of-type{margin-top:1.2rem}
+#work .ph{padding:0!important}

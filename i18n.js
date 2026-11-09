@@ -1,5 +1,13 @@
 /* Italiano. Scritto in italiano, non tradotto dall'inglese. */
 window.IT = {
+wk1b:"Sei progetti, ognuno raccontato negli stessi quattro passi: Scoprire, Definire, Sviluppare, Realizzare. Apri una scheda per leggerlo.",
+ph1s:"Cosa ho osservato e con chi ho parlato",
+ph2s:"Il problema che ho scelto di risolvere",
+ph3s:"Le idee e le opzioni che ho valutato",
+ph4s:"Cosa ho fatto, testato e imparato",
+wm1:"50 interviste, fatte dal gruppo.",
+wm2:"Testato con screenshot di offerte su un vero telefono Android.",
+
 wk1:"Sei progetti, nell&rsquo;ordine in cui li leggerei io. Apri una scheda per la storia completa.",
 wk2:"Cosa significano le etichette",
 bd1:"Prodotto online",
