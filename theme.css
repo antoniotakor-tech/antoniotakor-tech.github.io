@@ -146,6 +146,21 @@ strong,b{font-weight:600}
 .status .dot{background:var(--sage)}
 .hero-face,.portrait img{filter:none}
 
+/* ---------- one hue per project (all muted, same lightness, all pass contrast) ---------- */
+.case{--c:var(--accent)}
+.case:nth-of-type(1){--c:#D6AB52}   /* MileZero: brass   */
+.case:nth-of-type(2){--c:#86B88A}   /* Return Gap: sage  */
+.case:nth-of-type(3){--c:#5FB8B0}   /* Calm Nav: teal    */
+.case:nth-of-type(4){--c:#7FA8E6}   /* Purylock: blue    */
+.case:nth-of-type(5){--c:#B39DDB}   /* GrandPod: lilac   */
+.case .case-more,.case:first-of-type .case-more{box-shadow:inset 0 0 0 1px var(--line),inset 0 3px 0 var(--c)}
+.case-num b,.panel h4,.kit dt{color:var(--c)}
+.case-more .sign,.case-link{background:var(--c);color:var(--on-accent)}
+.case-more>summary:hover .sign,.case-link:hover{background:var(--c);filter:brightness(1.12)}
+.case-rf .rf-to{border-bottom-color:var(--c)}
+.panel blockquote{border-left-color:var(--c)}
+.case-more[open] .sign{background:var(--fg);filter:none}
+
 /* ---------- road-marking dividers, as on the MileZero site ---------- */
 main>section{position:relative}
 main>section.wrap{padding-top:clamp(3.5rem,7vw,5.5rem);padding-bottom:clamp(1rem,3vw,2rem)}
