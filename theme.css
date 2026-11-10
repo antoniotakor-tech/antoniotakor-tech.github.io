@@ -433,3 +433,4 @@ body,main>section.wrap:nth-of-type(even){background-image:url("assets/grain-soft
 #work .case .panel blockquote{border-left-color:var(--accent)}
 #work .case .case-more .sign::before,#work .case .case-more .sign::after,#work .case .pc-cta .sign::before,#work .case .pc-cta .sign::after{background:var(--on-accent)!important}
 #work .case .pc-meta,#work .case .pc-meta span,#work .case .pc-role b,#work .case .pc-open,#work .case .pc-close,#work .case .case-more .facts dt,#work .case .panel .flow-tag,#work .case .case-cap b{color:var(--accent)!important}
+.hero-sub{margin-top:1.8rem}
