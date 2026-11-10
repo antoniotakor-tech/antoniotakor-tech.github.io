@@ -405,10 +405,9 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,t
 .ph:first-of-type{margin-top:1.2rem}
 #work .ph{padding:0!important}
 
-/* grain: fine paper-like noise on the page background ONLY. It sits behind all content (z-index -1, body background transparent), so it never covers text, pictures or cards.
-   Fine paper-like noise over the flat colours (a small local PNG, nothing external) */
-html::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:url("assets/grain.png");background-size:180px 180px;opacity:.2}
-@media print,(forced-colors:active){html::after{display:none}}
 
 body{background:transparent}
 
+
+/* grain: fine paper-like noise on the flat background colours only (never on photos or screenshots). A small local PNG, nothing external. */
+body,main>section.wrap:nth-of-type(even){background-image:url("assets/grain-soft.png");background-size:180px 180px}
