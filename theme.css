@@ -16,7 +16,7 @@
 
 :root{
   color-scheme:dark;
-  --bg:#080C11; --card:#1F2D3B; --card-2:#2A3B4D;
+  --bg:#080C11; --card:#2A3439; --card-2:#364148;
   --fg:#EAEEF2; --fg-2:#CDD5DE; --muted:#AEBAC6;
   --line:rgba(234,238,242,.12); --rule:var(--line); --rule-soft:rgba(234,238,242,.18);
   --accent:#E0B45A; --accent-2:#EDCB82; --on-accent:#0A0F14;
@@ -341,10 +341,10 @@ body[data-case="4"] .bgfx .m4,body[data-case="5"] .bgfx .m5{opacity:.45}
    - accessibility: 16px+ text, 4.5:1 contrast, 3px focus ring, 44px targets
    ========================================================================== */
 :root{
-  --well:#162230;                         /* solid inset surface inside an opened project */
-  --grad-warm:var(--accent); --grad-cool:#2A3B4D;
-  --pink-glass:#2A3B4D; --green-glass:#1E3029; --red-glass:#2A3B4D;
-  --glass:#080C11; --glass-2:#1F2D3B; --blur:none;
+  --well:#1E252A;                         /* solid inset surface inside an opened project */
+  --grad-warm:var(--accent); --grad-cool:#364148;
+  --pink-glass:#364148; --green-glass:#1E3029; --red-glass:#364148;
+  --glass:#080C11; --glass-2:#2A3439; --blur:none;
   --shadow:none; --glow:none;
 }
 *,*::before,*::after{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
