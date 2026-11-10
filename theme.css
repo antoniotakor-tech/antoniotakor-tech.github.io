@@ -424,11 +424,11 @@ body,main>section.wrap:nth-of-type(even){background-image:url("assets/grain-soft
 #work .case .case-link{background:var(--c);color:var(--on-accent);font-weight:700}
 #work .case .ph{border-top:2px solid var(--c);padding-top:1.4rem!important}
 
-/* WORK v6: one look for every project. No per-project colours: black shapes, light text. */
-#work .case{--c:#000;--ct:var(--fg)}
+/* WORK v6: one look for every project, in the portfolio's own yellow (same as the headings). */
+#work .case{--c:var(--accent);--ct:var(--accent)}
 #work .case .case-name,#work .case .pc-n,#work .case .ph-sub,#work .case .kit dt,#work .case .panel h4,#work .case .demo-flag{color:var(--ct)!important}
-#work .case .pc-badge,#work .case .pc-cta .sign,#work .case .case-link,#work .case .ph>h4 b,#work .case .case-more .sign{background:#000!important;color:var(--fg)!important;border-color:#000!important}
-#work .case .panel .flow-lane.now .flow-row b:last-of-type,#work .case .panel .flow-lane.fix .flow-row b:last-of-type{background:#000!important;color:var(--fg)!important}
-#work .case .case-rf .rf-to{border-bottom-color:var(--fg)}
-#work .case .panel blockquote{border-left-color:#000}
-#work .case .case-more .sign::before,#work .case .case-more .sign::after,#work .case .pc-cta .sign::before,#work .case .pc-cta .sign::after{background:var(--fg)!important}
+#work .case .pc-badge,#work .case .pc-cta .sign,#work .case .case-link,#work .case .ph>h4 b,#work .case .case-more .sign{background:var(--accent)!important;color:var(--on-accent)!important;border-color:var(--accent)!important}
+#work .case .panel .flow-lane.now .flow-row b:last-of-type,#work .case .panel .flow-lane.fix .flow-row b:last-of-type{background:var(--accent)!important;color:var(--on-accent)!important}
+#work .case .case-rf .rf-to{border-bottom-color:var(--accent)}
+#work .case .panel blockquote{border-left-color:var(--accent)}
+#work .case .case-more .sign::before,#work .case .case-more .sign::after,#work .case .pc-cta .sign::before,#work .case .pc-cta .sign::after{background:var(--on-accent)!important}
